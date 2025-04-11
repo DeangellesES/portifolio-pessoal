@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="assets/css/reset.css">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>Meu Portifólio</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+</head>
+
+<body>
+  <!--CABEÇALHO-->
+  <header>
+    <h1>Meu <span>Portifólio</span></h1>
+    <div class="bg">
+      <i class="fa-solid fa-bars"></i>
+      <nav>
+        <ul class="navegacao-primaria">
+          <li><a href="#inicial" class="navegacao-primaria__item">Início</a></li>
+          <li><a href="#sobre" class="navegacao-primaria__item">Sobre</a></li>
+          <li><a href="#especialidades" class="navegacao-primaria__item">Especialidades</a></li>
+          <li><a href="#resumo" class="navegacao-primaria__item">Resumo</a></li>
+          <li><a href="#portifolio" class="navegacao-primaria__item">Projetos</a></li>
+          <li><a href="#rodape"><button class="navegacao-primaria__btn">Contato</button></a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <!--FIM CABEÇALHO-->
+
+  <main>
+    <!--INICIO SEÇÃO CV-->
+    <section class="secao-curriculo" id="inicial">
+      <div>
+        <!-- INICIO TITULO SECAO CV-->
+        <h2 class="digitando">Olá, Sou Desenvolvedor Full-stack</h2>
+        <!-- FIM TITULO SECAO CV-->
+        <p>
+          Sou um estudante de Engenharia de Software atualmente no 6° semestre, com uma grande paixão pelo mundo da
+          tecnologia. Além de me dedicar aos estudos acadêmicos, aproveito meu tempo para estudar programação e colocar
+          em prática meus conhecimentos. Busco constantemente aprender e crescer profissionalmente.
+        </p>
+        <a href="curriculoportifolio.pdf">Download CV</a>
+      </div>
+      <img src="assets/img/foto-apresentacao.jpeg" alt="imagem de uma pessoa" />
+    </section>
+    <!--FIM SEÇÃO CV-->
+
+    <!--INICIO SEÇÃO SOBRE-->
+    <section aria-label="seção sobre mim" class="sobre" id="sobre">
+      <div class="titulo-generico">
+        <h1>About me</h1>
+      </div>
+      <div class="sobre-conteudo">
+        <div class="sobre-texto">
+          <h1>I'm Dev Felipe Deangelles</h1>
+        </div>
+        <div class="sobre_info">
+          <p>
+            <i class="fa-solid fa-calendar-days"></i>Date of birth:19 jun 1996
+          </p>
+          <!-- <p><i class="fa-solid fa-laptop"></i>Freelance: Available</p> -->
+          <p>
+            <i class="fa-solid fa-location-dot"></i>Address: Minas Gerais, Brazil
+          </p>
+          <!-- <p>
+            <i class="fa-solid fa-globe"></i>Spoken Langages: Brazil, Espanhol
+            and English
+          </p> -->
+          <!-- <p><i class="fa-solid fa-flag"></i>Nationalily: Russian</p> -->
+          <p><i class="fa-solid fa-phone-volume"></i>Phone +35 99763-1949</p>
+          <p>
+            <i class="fa-solid fa-envelope"></i>Email: FelipeDeangelles@hotmail.com
+          </p>
+          <p>
+            <i class="fa-brands fa-github"></i><a href="https://github.com/DeangellesES"
+              target="_blank">https://github.com/DeangellesES</a>
+          </p>
+          <p>
+            <i class="fa-brands fa-linkedin"></i><a href="https://www.linkedin.com/in/felipe-deangelles-da-silva-lopes/"
+              target="_blank">https://www.linkedin.com/in/felipe-deangelles-da-silva-lopes/</a>
+          </p>
+        </div>
+      </div>
+    </section>
+    <!--FIM SEÇÃO SOBRE-->
+
+    <!--Início especialidades-->
+    <section class="especialidades" id="especialidades">
+      <h2 class="especialidades-titulo">MINHAS <span>ESPECIALIDADES.</span></h2>
+      <div class="flex">
+        <div class="especialidades-box">
+          <i class="bi bi-code-square"></i>
+          <h3>Websites</h3>
+          <p></p>
+        </div>
+        <div class="especialidades-box">
+          <i class="bi bi-cart"></i>
+          <h3>Lojas online</h3>
+          <p></p>
+        </div>
+        <div class="especialidades-box">
+          <i class="bi bi-code-square"></i>
+          <h3>Blogs</h3>
+          <p></p>
+        </div>
+      </div>
+    </section>
+    <!--especialidades-->
+
+    <!--Seção resumo-->
+    <section class="my_resume" id="resumo">
+      <div class="titulo-generico">
+        <h2>Meu <span>Resumo</span></h2>
+        <h3>Minhas experiências, estudos e habilidades</h3>
+      </div>
+
+      <div class="resumo_generico">
+        <!-- INICIO EXPERIENCIAS -->
+        <h2><i class="fa-solid fa-handshake"></i>Experience</h2>
+        <div class="experience_content">
+          <div>
+            <span>01/2021-04/2021</span>
+            <h3>Estágio Desenvolvedor Back-end - Compila</h3>
+            <p>Auxiliava no desenvolvimento de novas funcionalidades e manutenção de produtos já
+              existentes.</p>
+          </div>
+          <!-- <div>
+            <span>2015-2017</span>
+            <h3>Web Developer - FailentRills</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto doloremque incidunt ipsam harum illo
+              numquam, amet dolores exercitationem. Facere doloribus suscipit quibusdam, mollitia excepturi eius porro
+              laudantium ex dolor placeat.</p>
+          </div>-->
+          <ul>
+            <li><i class="fa-sharp fa-solid fa-circle"></i></li>
+            <!-- <li><i class="fa-sharp fa-solid fa-circle"></i></li>
+            <li><i class="fa-sharp fa-solid fa-circle"></i></li> -->
+          </ul>
+        </div>
+        <!-- FIM EXPERIENCIAS -->
+
+        <!-- INICIO CURSOS -->
+        <h2 class="education"><i class="fa-solid fa-book"></i>Education</h2>
+        <div class="education_content">
+          <div>
+            <span>2021-2025</span>
+            <h3>Bacharelado - Engenharia de Software - Unicesumar </h3>
+          </div>
+          <div>
+            <h3>Alura</h3>
+            <p>Diversos cursos na plataforma Alura.</p>
+          </div>
+          <div>
+            <h3>Desenvolvimento Web Completo - 20 cursos + 20 projetos
+            </h3>
+            <p>Domine Web - 20 Cursos - HTML5, CSS3, SASS, Bootstrap, JS, ES6, PHP, OO, MySQL, JQuery, MVC, APIs, IONIC
+              e muito mais.</p>
+          </div>
+          <div>
+            <h3>Curso Web Moderno Completo com JavaScript 2022 + Projetos
+            </h3>
+            <p>Domine Web com 15 Cursos + Projetos: Javascript Angular React Next Vue Node HTML CSS jQuery Bootstrap
+              Webpack Gulp MySQL.</p>
+          </div>
+          <div>
+            <h3>MSFlix-Mycom Silveira
+            </h3>
+            <p>Diversos Cursos na Plataforma MSFlix-Maycon Silveira.</p>
+          </div>
+          <ul>
+            <li><i class="fa-sharp fa-solid fa-circle"></i></li>
+            <li><i class="fa-sharp fa-solid fa-circle"></i></li>
+            <li><i class="fa-sharp fa-solid fa-circle"></i></li>
+            <li><i class="fa-sharp fa-solid fa-circle"></i></li>
+            <li><i class="fa-sharp fa-solid fa-circle"></i></li>
+          </ul>
+        </div>
+        <!-- FIM CURSOS -->
+      </div>
+
+      <!-- INICIO HABILIDADES -->
+      <div class="skills">
+        <div class="my_skill">
+          <h2><i class="fa-sharp fa-solid fa-star"></i>My skills</h2>
+          <!-- 1 / 3 -->
+          <div class="skills-colunms">
+            <div>
+              <div class="skill_content">
+                <h3>HTML5</h3>
+                <ul>
+                  <li><i class="fa-sharp fa-solid fa-star"></i></li>
+                  <li><i class="fa-sharp fa-solid fa-star"></i></li>
+                  <li><i class="fa-sharp fa-solid fa-star"></i></li>
+                  <li><i class="fa-sharp fa-solid fa-star"></i></li>
+                  <li><i class="fa-sharp fa-solid fa-star"></i></li>
+                </ul>
+              </div>
+              <div class="skill_content">
+                <h3>CSS3</h3>
+                <ul>
+                  <li><i class="fa-sharp fa-solid fa-star"></i></li>
+                  <li><i class="fa-sharp fa-solid fa-star"></i></li>
+                  <li><i class="fa-sharp fa-solid fa-star"></i></li>
+                  <li><i class="fa-sharp fa-solid fa-star"></i></li>
+                  <li><i class="fa-sharp fa-solid fa-star"></i></li>
+                </ul>
+              </div>
+              <div class="skill_content">
+                <h3>JavaScript</h3>
+                <ul>
+                  <li><i class="fa-sharp fa-solid fa-star"></i></li>
+                  <li><i class="fa-sharp fa-solid fa-star"></i></li>
+                  <li><i class="fa-sharp fa-solid fa-star"></i></li>
+                  <li><i class="fa-sharp fa-solid fa-star"></i></li>
+                  <li><i class="bi bi-star"></i></li>
+                </ul>
+              </div>
+              <div class="skill_content">
+                <h3>Bootstrap</h3>
+                <ul>
+                  <li><i class="fa-sharp fa-solid fa-star"></i></li>
+                  <li><i class="fa-sharp fa-solid fa-star"></i></li>
+                  <li><i class="fa-sharp fa-solid fa-star"></i></li>
+                  <li><i class="bi bi-star"></i></li>
+                  <li><i class="bi bi-star"></i></li>
+                </ul>
+              </div>
+              <div class="skill_content">
+                <h3>SASS</h3>
+                <ul>
+                  <li><i class="fa-sharp fa-solid fa-star"></i></li>
+                  <li><i class="fa-sharp fa-solid fa-star"></i></li>
+                  <li><i class="fa-sharp fa-solid fa-star"></i></li>
+                  <li><i class="fa-sharp fa-solid fa-star"></i></li>
+                  <li><i class="bi bi-star"></i></li>
+                </ul>
+              </div>
+              <div class="skill_content">
+                <h3>React</h3>
+                <ul>
+                  <li><i class="fa-sharp fa-solid fa-star"></i></li>
+                  <li><i class="fa-sharp fa-solid fa-star"></i></li>
+                  <li><i class="fa-sharp fa-solid fa-star"></i></li>
+                  <li><i class="bi bi-star"></i></li>
+                  <li><i class="bi bi-star"></i></li>
+                </ul>
+              </div>
+            </div>
+
+            <!--  2/ 3 -->
+            <div>
+              <div class="skill_content">
+                <h3>jQuery</h3>
+                <ul>
+                  <li><i class="fa-sharp fa-solid fa-star"></i></li>
+                  <li><i class="fa-sharp fa-solid fa-star"></i></li>
+                  <li><i class="fa-sharp fa-solid fa-star"></i></li>
+                  <li><i class="bi bi-star"></i></li>
+                  <li><i class="bi bi-star"></i></li>
+                </ul>
+              </div>
+              <div class="skill_content">
+                <h3>TypeScript</h3>
+                <ul>
+                  <li><i class="fa-sharp fa-solid fa-star"></i></li>
+                  <li><i class="bi bi-star"></i></li>
+                  <li><i class="bi bi-star"></i></li>
+                  <li><i class="bi bi-star"></i></li>
+                  <li><i class="bi bi-star"></i></li>
+                </ul>
+              </div>
+              <div class="skill_content">
+                <h3>Node</h3>
+                <ul>
+                  <li><i class="fa-sharp fa-solid fa-star"></i></li>
+                  <li><i class="fa-sharp fa-solid fa-star"></i></li>
+                  <li><i class="fa-sharp fa-solid fa-star"></i></li>
+                  <li><i class="bi bi-star"></i></li>
+                  <li><i class="bi bi-star"></i></li>
+                </ul>
+              </div>
+              <div class="skill_content">
+                <h3>PHP</h3>
+                <ul>
+                  <li><i class="fa-sharp fa-solid fa-star"></i></li>
+                  <li><i class="bi bi-star"></i></li>
+                  <li><i class="bi bi-star"></i></li>
+                  <li><i class="bi bi-star"></i></li>
+                  <li><i class="bi bi-star"></i></li>
+                </ul>
+              </div>
+              <div class="skill_content">
+                <h3>Flutter</h3>
+                <ul>
+                  <li><i class="fa-sharp fa-solid fa-star"></i></li>
+                  <li><i class="bi bi-star"></i></li>
+                  <li><i class="bi bi-star"></i></li>
+                  <li><i class="bi bi-star"></i></li>
+                  <li><i class="bi bi-star"></i></li>
+                </ul>
+              </div>
+              <div class="skill_content">
+                <h3>React Native</h3>
+                <ul>
+                  <li><i class="fa-sharp fa-solid fa-star"></i></li>
+                  <li><i class="bi bi-star"></i></li>
+                  <li><i class="bi bi-star"></i></li>
+                  <li><i class="bi bi-star"></i></li>
+                  <li><i class="bi bi-star"></i></li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- 3 / 3 -->
+
+            <div>
+              <div class="skill_content">
+                <h3>MySQL</h3>
+                <ul>
+                  <li><i class="fa-sharp fa-solid fa-star"></i></li>
+                  <li><i class="fa-sharp fa-solid fa-star"></i></li>
+                  <li><i class="fa-sharp fa-solid fa-star"></i></li>
+                  <li><i class="bi bi-star"></i></li>
+                  <li><i class="bi bi-star"></i></li>
+                </ul>
+              </div>
+              <div class="skill_content">
+                <h3>MongoDB</h3>
+                <ul>
+                  <li><i class="fa-sharp fa-solid fa-star"></i></li>
+                  <li><i class="fa-sharp fa-solid fa-star"></i></li>
+                  <li><i class="bi bi-star"></i></li>
+                  <li><i class="bi bi-star"></i></li>
+                  <li><i class="bi bi-star"></i></li>
+                </ul>
+              </div>
+              <div class="skill_content">
+                <h3>Git</h3>
+                <ul>
+                  <li><i class="fa-sharp fa-solid fa-star"></i></li>
+                  <li><i class="fa-sharp fa-solid fa-star"></i></li>
+                  <li><i class="fa-sharp fa-solid fa-star"></i></li>
+                  <li><i class="bi bi-star"></i></li>
+                  <li><i class="bi bi-star"></i></li>
+                </ul>
+              </div>
+              <div class="skill_content">
+                <h3>Tailwind</h3>
+                <ul>
+                  <li><i class="fa-sharp fa-solid fa-star"></i></li>
+                  <li><i class="fa-sharp fa-solid fa-star"></i></li>
+                  <li><i class="bi bi-star"></i></li>
+                  <li><i class="bi bi-star"></i></li>
+                  <li><i class="bi bi-star"></i></li>
+                </ul>
+              </div>
+              <div class="skill_content">
+                <h3>Linux</h3>
+                <ul>
+                  <li><i class="fa-sharp fa-solid fa-star"></i></li>
+                  <li><i class="fa-sharp fa-solid fa-star"></i></li>
+                  <li><i class="fa-sharp fa-solid fa-star"></i></li>
+                  <li><i class="bi bi-star"></i></li>
+                  <li><i class="bi bi-star"></i></li>
+                </ul>
+              </div>
+              <div class="skill_content">
+                <h3>Scrum</h3>
+                <ul>
+                  <li><i class="fa-sharp fa-solid fa-star"></i></li>
+                  <li><i class="fa-sharp fa-solid fa-star"></i></li>
+                  <li><i class="fa-sharp fa-solid fa-star"></i></li>
+                  <li><i class="bi bi-star"></i></li>
+                  <li><i class="bi bi-star"></i></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- FIM HABILIDADES -->
+    </section>
+    <!--Fim seção resumo-->
+
+    <!--INÍCIO PORTIFÓLIO-->
+    <section class="portifolio" id="portifolio">
+      <div class="swiper portifolio-interface">
+        <h2 class="portifolio-titulo">MEU <span>PORTIFÓLIO.</span></h2>
+        <h3>Alguns projetos</h3>
+        <div class="swiper-wrapper flex">
+          <div class="swiper-slide img-port" style="background-image: url(assets/img/site-hamburgueria.png);">
+            <div class="overlay">
+              <span>Projeto 1</span>
+              <a href="https://deangelleses.github.io/site_de_uma_hamburgueria_com_efeitos-JavaScript-CSS-HTML/"
+                target="_blank">Site <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </div>
+          <div class="swiper-slide img-port" style="background-image: url(assets/img/loja-ficticia.png);">
+            <div class="overlay">
+              <span>Projeto 2</span>
+              <a href="https://deangelleses.github.io/loja_ficticia-Bootstrap/" target="_blank">Site<i
+                  class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </div>
+          <div class="swiper-slide img-port" style="background-image: url(assets/img/site-ecommerce.png);">
+            <div class="overlay">
+              <span>Projeto 3</span>
+              <a href="https://deangelleses.github.io/ecommerce_produtos_digitais_ficticio-HTML-CSS-JavaScript/"
+                target="_blank">Site<i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </div>
+          <div class="swiper-slide img-port" style="background-image: url(assets/img/restaurante.png);">
+            <div class="overlay">
+              <span>Projeto 4</span>
+              <a href="https://deangelleses.github.io/Site_restaurante-HTML-CSS-JavaScript_jQuery/"
+                target="_blank">Site<i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </div>
+          <div class="swiper-slide img-port" style="background-image: url(assets/img/escola-de-musica.png);">
+            <div class="overlay">
+              <span>Projeto 5</span>
+              <a href="https://deangelleses.github.io/escola_de_musica-HTML-CSS/" target="_blank">Site<i
+                  class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </div>
+          <div class="swiper-slide img-port" style="background-image: url(assets/img/streaming.png);">
+            <div class="overlay">
+              <span>Projeto 6</span>
+              <a href="https://github.com/DeangellesES/plataforma_de_streaming-PHP-JavaScript-HTML-CSS"
+                target="_blank">Site<i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </div>
+          <div class="swiper-slide img-port" style="background-image: url(assets/img/apeperia.png);">
+            <div class="overlay">
+              <span>Projeto 7</span>
+              <a href="https://deangelleses.github.io/site-apeperia-ficticio-Utilizando_Sass_e_Compass_no_CSS/"
+                target="_blank">Site<i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </div>
+          <div class="swiper-slide img-port" style="background-image: url(assets/img/site-eventos.png);">
+            <div class=" overlay">
+              <span>Projeto 8</span>
+              <a href="https://deangelleses.github.io/site_de_eventos-Flex_box-Grid/" target="_blank">Site<i
+                  class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </div>
+          <div class="swiper-slide img-port" style="background-image: url(assets/img/fokus.png);">
+            <div class="overlay">Projeto 9</div>
+          </div>
+          <div class="swiper-slide img-port" style="background-image: url(assets/img/organizador-de-funções.png);">
+            <div class="overlay">Projeto 10</div>
+          </div>
+          <div class="swiper-slide img-port" style="background-image: url(assets/img/hamburgueria-simples.png);">
+            <div class=" overlay">
+              <span>Projeto 11</span>
+              <a href="https://deangelleses.github.io/Site_Hamburgueria-JavaScript-CSS_Tailwind-HTML/"
+                target="_blank">Site<i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </div>
+          <div class="swiper-slide img-port" style="background-image: url(assets/img/banco-ficticio.png);">
+            <div class=" overlay">
+              <span>Projeto 12</span>
+              <a href="https://deangelleses.github.io/validacao_de_formulario-JavaScript/" target="_blank">Site<i
+                  class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </div>
+          <div class="swiper-slide img-port" style="background-image: url(assets/img/movimentacao-conta.png);">
+            <div class=" overlay">
+              <span>Projeto 13</span>
+              <a href="https://github.com/DeangellesES/react-Styled_components--Aplicacao_web-Saldo_e_movimentacao_de_conta"
+                target="_blank">Site<i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+        <!-- <button class="read_more">Ver mais...</button> -->
+      </div>
+    </section>
+    <!--FIM PORTIFÓLIO-->
+  </main>
+
+  <footer id="rodape">
+    <div class="rodape"><!--parte de cima do rodapé-->
+      <div class="flex">
+        <div class="rodape-social">
+          <a href="https://github.com/DeangellesES" target="_blank"><button><i
+                class="fa-brands fa-github"></i></button></a>
+          <a href="https://www.linkedin.com/in/felipe-deangelles-da-silva-lopes/" target="_blank"><button><i
+                class="bi bi-linkedin"></i></button></a>
+        </div>
+      </div>
+    </div><!--fim parte de cima do rodapé-->
+
+    <div class="rodape borda"><!--parte de baixo do rodapé-->
+      <p><i class="bi bi-envelope-fill"><span>FelipeDeangelles@hotmail.com</span></i></p>
+      <p><i class="fa-solid fa-phone-volume"><a href="https://api.whatsapp.com/send?phone=5535997631949"
+            target="_blank">35 997631949</a></i></p>
+    </div><!--fim parte de baixo do rodapé-->
+  </footer>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="assets/js/script.js"></script>
+</body>
+
+</html>

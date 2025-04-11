@@ -1,0 +1,1036 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+$cor-padrao: #1c3070;
+$cor-secundaria: #fff;
+$cor-hover: #fff;
+$cor-de-fundo-geral: black;
+$cor-de-fundo-secao: black;
+
+/* GERAL */
+body {
+    background-color: $cor-de-fundo-geral;
+    font-family: 'Oswald', sans-serif;
+    position: relative;
+}
+
+.resumo_generico h2 i,
+.my_skill h2 i {
+    margin-right: 10px;
+}
+
+.flex {
+    display: flex;
+    gap: 60px;
+}
+
+.especialidades-titulo,
+.titulo-generico h2,
+.portifolio-titulo {
+    color: $cor-secundaria;
+    font-size: 2rem;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.especialidades-titulo span,
+.my_resume .titulo-generico h2 span,
+.portifolio-titulo span {
+    color: $cor-padrao;
+}
+
+.navegacao-primaria__btn:hover,
+.rodape-social a button:hover {
+    box-shadow: 0px 0px 8px $cor-hover;
+    color: $cor-hover;
+    transform: scale(1.05);
+}
+
+/* CABECALHO */
+header {
+    align-items: center;
+    background-color: $cor-de-fundo-secao;
+    display: flex;
+    justify-content: space-between;
+    padding: 35px;
+
+    h1 {
+        color: $cor-secundaria;
+        font-size: 2em;
+        font-weight: 700;
+
+        span {
+            color: $cor-padrao;
+        }
+    }
+}
+
+nav .navegacao-primaria {
+    align-items: center;
+    display: flex;
+    gap: 30px;
+
+    .navegacao-primaria__item {
+        color: $cor-padrao;
+        font-size: 1.3rem;
+        font-weight: 1000;
+        list-style: none;
+        text-decoration: none;
+    }
+
+    .navegacao-primaria__item:hover {
+        color: $cor-hover;
+    }
+
+    .navegacao-primaria__btn {
+        background-color: $cor-padrao;
+        border: 0;
+        border-radius: 30px;
+        cursor: pointer;
+        font-size: 18px;
+        font-weight: 700;
+        padding: 10px 40px;
+        transition: .5s;
+    }
+}
+
+.navegacao-primaria__item::after {
+    border-bottom: 4px solid $cor-padrao;
+    content: '';
+    display: block;
+    height: 0px;
+    transition: .9s;
+    width: 0px;
+}
+
+.navegacao-primaria__item:hover::after {
+    width: 100%;
+}
+
+
+
+
+/* SEÇÃO DESCRIÇÃO INICIAL*/
+.secao-curriculo {
+    align-items: center;
+    /*Chamando keyframes para fazer tela descer devagar com efeito*/
+    animation: inicializar .7s forwards;
+    background-color: $cor-de-fundo-secao;
+    box-shadow: 0 0 40px 10px #ffffff1d;
+    display: grid;
+    gap: 60px;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-around;
+    padding: 60px;
+
+    div {
+        display: grid;
+        gap: 30px;
+
+        p {
+            color: $cor-secundaria;
+            font-weight: 700;
+        }
+
+        a {
+            border-radius: 5px;
+            border: 2px solid $cor-secundaria;
+            color: $cor-secundaria;
+            justify-self: start;
+            padding: 15px 40px;
+            text-decoration: none;
+        }
+    }
+
+    h2 {
+        color: #f7f7f7;
+        font-size: 30px;
+        font-weight: 700;
+        line-height: 10px;
+    }
+
+    img {
+        /*Chamando a keyframes pra fazer foto ficar flutuando pra cima e pra baixo*/
+        animation: flutuar 2s ease-in-out infinite alternate;
+        border-radius: 30%;
+        max-width: 100%;
+        position: relative;
+    }
+}
+
+/* Animação para fazer tela descer devagar com efeito */
+@keyframes inicializar {
+    from {
+        opacity: 0;
+        transform: translate3d(0, -60px, 0);
+    }
+
+    to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+/* Animação para fazer a foto ficar flutuando pra cima e pra baixo*/
+@keyframes flutuar {
+    0% {
+        top: 0;
+    }
+
+    100% {
+        top: 30px
+    }
+}
+
+.digitando::after {
+    /*Chamando a keyframes pra fazer o pipe ficar piscando*/
+    animation: pisca .6s infinite;
+    content: '|';
+    margin-left: 5px;
+    // opacity: 1;
+}
+
+/* Animação para fazer ficar piscando o pipe no fim do titulo*/
+@keyframes pisca {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+}
+
+/* SEÇÃO SOBRE*/
+.sobre {
+    padding: 140px 0;
+
+    .titulo-generico h1 {
+        color: $cor-padrao;
+        font-size: 3em;
+        margin: 30px 0;
+        text-align: center;
+    }
+
+    .sobre-conteudo {
+        /*chama keyframe pra fazer o conteudo vir de lado*/
+        animation: sobeSecao .9s ease-in-out forwards;
+        color: #707070;
+        padding: 50px;
+
+        .sobre-texto h1 {
+            color: $cor-secundaria;
+            font-size: 2.3rem;
+            text-align: center;
+        }
+
+        .sobre-texto h1::after {
+            background-color: $cor-padrao;
+            border-radius: 5px;
+            content: '';
+            display: block;
+            height: 6px;
+            margin: 20px 0;
+            width: 60px;
+        }
+
+        .sobre_info {
+            display: grid;
+            gap: 15px;
+            grid-template-columns: 1fr 1fr;
+            margin-top: 30px;
+
+            i {
+                color: $cor-padrao;
+                font-size: 1.5rem;
+                display: inline-block;
+                padding-right: 15px;
+            }
+
+            p {
+                font-size: .9rem;
+            }
+
+            a {
+                color: #707070;
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+/*Keyframe pra fazer o conteudo vir de lado*/
+@keyframes sobeSecao {
+    from {
+        transition: .5s;
+        transform: translate3d(80px, 0, 0);
+    }
+
+    to {
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+/* .sobre-texto p {
+    font-size: 1.3rem;
+    grid-row: 2;
+    grid-column: 1 / -1;
+} */
+
+/* Especialidades */
+section.especialidades {
+    box-shadow: 0 0 40px 10px #ffffff1d;
+    padding: 180px 4%;
+
+    .flex {
+        justify-content: space-around;
+    }
+
+    .especialidades-box {
+        border-radius: 20px;
+        color: $cor-secundaria;
+        margin-top: 45px;
+        padding: 40px;
+        transition: .2s;
+        width: 20%;
+        text-align: center;
+
+        i {
+            color: $cor-padrao;
+            font-size: 70px;
+        }
+
+        h3 {
+            font-size: 26px;
+            margin: 15px 0;
+        }
+    }
+
+    .especialidades-box:hover {
+        transform: scale(1.05);
+        box-shadow: 0 0 20px #ffffff78;
+    }
+}
+
+/* RESUMO */
+.my_resume {
+    color: $cor-secundaria;
+    padding: 50px 0;
+
+    h3 {
+        color: #3e3d3d;
+        text-align: center;
+        font-size: 1.6em;
+    }
+
+    .resumo_generico {
+        display: grid;
+        gap: 10px;
+        grid-template-columns: 1fr 1fr;
+        padding: 30px;
+
+        h2 {
+            background-color: $cor-padrao;
+            border-radius: 3px;
+            font-family: 'Poppins';
+            font-size: 1.5rem;
+            justify-self: start;
+            padding: 20px;
+            margin-bottom: 30px;
+        }
+
+        .education {
+            margin-bottom: 30px;
+            grid-column: 2;
+            grid-row: 1;
+        }
+    }
+}
+
+.experience_content ul,
+.education_content ul {
+    color: $cor-padrao;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.resumo_generico .experience_content div,
+.education_content div {
+    /* Animação para vir de lado o conteudo */
+    animation: ladoSecao .5s ease-in-out forwards;
+    background-color: #222;
+    display: none;
+    padding: 40px;
+    position: relative;
+}
+
+@keyframes ladoSecao {
+    from {
+        transition: .5s;
+        transform: translate3d(-60px, 0, 0);
+    }
+
+    to {
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+.resumo_generico .experience_content div.ativo,
+.education_content div.ativo {
+    display: block;
+}
+
+/* MEUS CURSOS E DIPLOMAS*/
+.resumo_generico .experience_content div::before,
+.education_content div::before {
+    border-bottom: 30px solid #222;
+    border-right: 30px solid transparent;
+    content: '';
+    display: inline-block;
+    left: 30px;
+    position: absolute;
+    top: -20px;
+}
+
+.resumo_generico .experience_content div span,
+.education_content div span {
+    color: $cor-padrao;
+    font-family: "Poppins";
+    font-weight: bold;
+}
+
+.resumo_generico .experience_content div h3,
+.education_content div h3 {
+    margin: 10px 0;
+}
+
+.resumo_generico .experience_content div p,
+.education_content div p {
+    color: #707070;
+    font-size: 1.1rem;
+}
+
+.experience_content ul li.ativo,
+.education_content ul li.ativo {
+    color: #3e3d3d;
+}
+
+/* My Skill */
+.skills {
+    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 4rem;
+    padding: 30px;
+
+    .my_skill {
+        display: grid;
+        grid-column: 2/3;
+
+        h2 {
+            background-color: $cor-padrao;
+            border-radius: 5px;
+            /* font-family: 'Poppins'; */
+            font-size: 1.5rem;
+            justify-self: center;
+            margin-bottom: 30px;
+            padding: 10px 30px;
+            text-transform: capitalize;
+        }
+
+        .skills-colunms {
+            display: flex;
+            gap: 8rem;
+            margin-top: 5rem;
+        }
+
+        .skill_content {
+            display: grid;
+            font-size: 1.5rem;
+            gap: 40px;
+            grid-column: 1/2;
+            grid-template-columns: 1fr 1fr;
+            margin-top: 10px;
+
+            h3 {
+                font-size: 1.5rem;
+            }
+
+            ul {
+                display: flex;
+            }
+        }
+    }
+}
+
+/*PORTIFOLIO*/
+section.portifolio {
+    padding: 80px 4%;
+    box-shadow: 0 0 40px 10px #ffffff1d;
+
+    .swiper {
+        width: 100%;
+        height: 650px;
+        .swiper-slide {
+            box-shadow: 0px 0px 10px #ffffff78;
+        }
+
+        .swiper-button-prev,
+        .swiper-button-next {
+            background-color: #000;
+            color: #fff;
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            padding: 15px;
+            box-shadow: 0px 0px 10px #ffffff78;
+            border: 1px solid #000;
+        }
+
+        .swiper-pagination {
+            background-color: #000;
+            color: #fff;
+        }
+    }
+
+    .portifolio-interface {
+        h3 {
+            color: #3e3d3d;
+            font-size: 1.7em;
+            margin-top: 15px;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        .flex {
+            margin-top: 60px;
+            justify-content: center;
+
+            .img-port {
+                background-size: cover;
+                border-radius: 40px;
+                cursor: pointer;
+                height: 460px;
+                position: relative;
+                transition: 8s;
+                max-width: 20rem;
+                min-width: 20rem;
+                .overlay {
+                    align-items: center;
+                    background-color: rgba(0, 0, 0, 0.5);
+                    border-radius: 40px;
+                    color: $cor-secundaria;
+                    display: flex;
+                    flex-direction: column;
+                    font-size: 24px;
+                    font-weight: 600;
+                    height: 100%;
+                    justify-content: center;
+                    left: 0;
+                    opacity: 0;
+                    position: absolute;
+                    top: 0;
+                    transition: .5s;
+                    width: 100%;
+                    span {
+                        align-items: center;
+                        justify-content: center;
+                        margin-top: 65%;
+                    }
+                    a {
+                        color: #fff;
+                        text-align: center;
+                        text-decoration: none;
+                        font-size: 1.5rem;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        gap: .6rem;
+                        height: 100%;
+                        margin-top: 1.5rem;
+                        z-index: 100;
+                        margin-bottom: 70%;
+                        border: 1px solid #fff;
+                        padding: .7rem 1rem;
+                        border-radius: 5;
+                        transition: .5s;
+                        
+                        i {
+                            font-size: .9rem;
+                            margin-top: .5rem;
+                        }
+                    }
+                    a:hover {
+                        box-shadow: 0 0 40px 10px #000;
+                        transform: scale(1.05);
+                        
+                    }
+                }
+
+                .overlay:hover {
+                    opacity: 30;
+                }
+                
+            }
+
+            .img-port:hover {
+                background-position: 100% 100%;
+            }
+
+        }
+    }
+}
+
+/* RODAPÉ */
+footer {
+    padding: 60px 4%;
+
+    .rodape {
+        padding: 20px 0;
+
+        .flex {
+            display: flex;
+            justify-content: end;
+
+            .rodape-social {
+                display: flex;
+                gap: 20px;
+
+                a button {
+                    background-color: $cor-padrao;
+                    border: none;
+                    border-radius: 50%;
+                    cursor: pointer;
+                    font-size: 1.5em;
+                    gap: 10px;
+                    padding: 20px;
+                    transition: 2s;
+                }
+            }
+        }
+    }
+
+    .borda {
+        border-top: 2px solid $cor-padrao;
+        display: flex;
+        justify-content: space-between;
+
+        p {
+            i {
+                color: $cor-padrao;
+                font-size: 22px;
+            }
+
+            span {
+                color: $cor-secundaria;
+                margin-left: 10px;
+            }
+
+            a {
+                color: $cor-secundaria;
+                margin-left: 10px;
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+// RESPONSIVIDADE RESPONSIVIDADE RESPONSIVIDADE RESPONSIVIDADE
+// MOBILE
+@media(max-width:480px) {
+
+    // CABECALHO CABECALHO CABECALHO
+    header .bg i {
+        position: absolute;
+        right: 50px;
+        color: $cor-secundaria;
+        top: 0; 
+        margin-top: 30px;
+        cursor: pointer;
+        display: block;
+        font-size: 2.5rem;
+    }
+
+    header .bg nav ul {
+        display: none;
+    }
+
+    header .bg nav ul.ativo {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        right: 0px;
+        margin-right: 20px;
+        margin-top: 30px;
+        padding: 15px;
+        /* chama a o keyframe criado, animação lista surgindo de cima pra baixo de forma mais lenta*/
+        animation: animation .5s forwards;
+        background-color: #000;
+        width: 85% !important;
+        border: 2px solid $cor-secundaria;
+        z-index: 10;
+    }
+
+    /*cria tipo uma função para fazer a animação descer de forma mais lenta no icone de hamburguer, junto a função em javascript*/
+    @keyframes animation {
+        from {
+            transform: translate3d(0, -60px, 0);
+        }
+
+        to {
+            transform: translate3d(0, 0, 0);
+        }
+    }
+
+    .navegacao-primaria li {
+        width: 100%;
+        // border-bottom: solid $cor-padrao;
+        text-align: center;
+    }
+
+    .navegacao-primaria li:nth-last-child(1) {
+        border: none;
+    }
+
+    .navegacao-primaria__item {
+
+        font-size: 1.7em !important;
+    }
+
+    /* SEÇÃO DESCRIÇÃO INICIAL*/
+    .secao-curriculo {
+        display: flex !important;
+        flex-direction: column !important;
+    }
+
+    .secao-curriculo div {
+        text-align: center;
+    }
+
+    .secao-curriculo div a {
+        margin: 0 auto;
+    }
+
+    .secao-curriculo div h2 {
+        font-size: 2em;
+        line-height: 30px;
+    }
+
+    .secao-curriculo div p {
+        font-size: 1.3em;
+    }
+
+    // Seção sobre
+    .sobre_info {
+        display: flex !important;
+        flex-direction: column !important;
+        justify-content: center;
+    }
+
+    .titulo-generico {
+        font-size: 1.5em;
+    }
+
+    .sobre_info p {
+        font-size: 1.3em !important;
+    }
+
+    /* Especialidades */
+    .especialidades h2 {
+        font-size: 3em;
+    }
+
+    .especialidades .flex {
+        margin-top: 80px !important;
+        display: flex;
+        flex-direction: column;
+        gap: 40px !important;
+    }
+
+    .especialidades-box {
+        text-align: center;
+        width: 50% !important;
+    }
+
+    // RESUMO
+    .titulo-generico h2 {
+        font-size: 2.5em;
+    }
+
+    .resumo_generico {
+        display: flex !important;
+        flex-direction: column;
+    }
+
+    .skills-colunms {
+        flex-direction: column;
+        gap: 0rem !important;
+    }
+
+    // PORTIFÓLIO
+    .portifolio-interface h2 {
+        font-size: 3em;
+    }
+
+    .portifolio-interface h3 {
+        font-size: 2.5em !important;
+    }
+
+    .portifolio-interface .flex {
+        display: flex !important;
+        flex-wrap: nowrap !important;
+    }
+
+    .img-port {
+        width: 290px !important;
+        margin: 0 auto;
+    }
+
+    // RODAPÉ
+    .borda {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+}
+
+@media(max-width:664px) {
+
+    // CABECALHO CABECALHO CABECALHO
+    header .bg i {
+        position: absolute;
+        right: 50px;
+        color: $cor-secundaria;
+        top: 0;
+        margin-top: 30px;
+        cursor: pointer;
+        display: block;
+        font-size: 2.5rem;
+    }
+
+    header .bg nav ul {
+        display: none;
+    }
+
+    header .bg nav ul.ativo {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        right: 0px;
+        margin-right: 20px;
+        margin-top: 30px;
+        padding: 15px;
+        /* chama a o keyframe criado, animação lista surgindo de cima pra baixo de forma mais lenta*/
+        animation: animation .5s forwards;
+        background-color: #000;
+        width: 90%;
+        border: 2px solid $cor-secundaria;
+        z-index: 10;
+    }
+
+    /*cria tipo uma função para fazer a animação descer de forma mais lenta no icone de hamburguer, junto a função em javascript*/
+    @keyframes animation {
+        from {
+            transform: translate3d(0, -60px, 0);
+        }
+
+        to {
+            transform: translate3d(0, 0, 0);
+        }
+    }
+
+    .navegacao-primaria li {
+        width: 100%;
+        // border-bottom: solid $cor-padrao;
+        text-align: center;
+    }
+
+    .navegacao-primaria li:nth-last-child(1) {
+        border: none;
+    }
+
+    .navegacao-primaria__item {
+        // color: #080808 !important;
+        font-size: 1.7em !important;
+    }
+
+    /* SEÇÃO DESCRIÇÃO INICIAL*/
+    .secao-curriculo {
+        display: flex !important;
+        flex-direction: column !important;
+    }
+
+    .secao-curriculo div {
+        text-align: center;
+    }
+
+    .secao-curriculo div a {
+        margin: 0 auto;
+    }
+
+    .secao-curriculo div h2 {
+        font-size: 2em;
+        line-height: 30px;
+    }
+
+    .secao-curriculo div p {
+        font-size: 1.3em;
+    }
+
+    // Seção sobre
+    .sobre_info {
+        display: flex !important;
+        flex-direction: column !important;
+        justify-content: center;
+    }
+
+    .titulo-generico {
+        font-size: 1.5em;
+    }
+
+    .sobre_info p {
+        font-size: 1.3em !important;
+    }
+
+    /* Especialidades */
+    .especialidades h2 {
+        font-size: 3em;
+    }
+
+    .especialidades .flex {
+        display: flex;
+        flex-direction: column;
+        gap: 0px;
+    }
+
+    .especialidades-box {
+        text-align: center;
+        margin-top: 0px !important;
+        width: 230px;
+        margin: 0 auto;
+    }
+
+    // RESUMO
+    .titulo-generico h2 {
+        font-size: 2.5em;
+    }
+
+    .resumo_generico {
+        display: flex !important;
+        flex-direction: column;
+    }
+
+    // PORTIFÓLIO
+    .portifolio-interface h2 {
+        font-size: 3em;
+    }
+
+    .portifolio-interface h3 {
+        font-size: 2.5em !important;
+    }
+
+    .portifolio-interface .flex {
+        display: grid;
+        row-gap: 60px;
+    }
+
+    .img-port {
+        width: 290px !important;
+        margin: 0 auto;
+    }
+
+    // RODAPÉ
+    .borda {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+}
+
+@media(max-width:888px) {
+
+    // CABECALHO CABECALHO CABECALHO
+    header .bg i {
+        position: absolute;
+        right: 50px;
+        color: $cor-secundaria;
+        top: 0;
+        margin-top: 30px;
+        cursor: pointer;
+        display: block;
+        font-size: 2.5rem;
+    }
+
+    header .bg nav ul {
+        display: none;
+    }
+
+    header .bg nav ul.ativo {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        right: 0px;
+        margin-right: 20px;
+        margin-top: 30px;
+        padding: 15px;
+        /* chama a o keyframe criado, animação lista surgindo de cima pra baixo de forma mais lenta*/
+        animation: animation .5s forwards;
+        background-color: #000;
+        width: 90%;
+        border: 2px solid $cor-secundaria;
+        z-index: 10;
+    }
+
+    /*cria tipo uma função para fazer a animação descer de forma mais lenta no icone de hamburguer, junto a função em javascript*/
+    @keyframes animation {
+        from {
+            transform: translate3d(0, -60px, 0);
+        }
+
+        to {
+            transform: translate3d(0, 0, 0);
+        }
+    }
+
+    .navegacao-primaria li {
+        width: 100%;
+        // border-bottom: solid $cor-padrao;
+        text-align: center;
+    }
+
+    .navegacao-primaria li:nth-last-child(1) {
+        border: none;
+    }
+
+    .navegacao-primaria__item {
+        color: $cor-secundaria !important;
+        // border-bottom: solid #000;
+        font-size: 1.7em !important;
+    }
+
+    /* SEÇÃO DESCRIÇÃO INICIAL*/
+    .secao-curriculo {
+        display: flex !important;
+        flex-direction: column !important;
+    }
+
+    .secao-curriculo div {
+        text-align: center;
+    }
+
+    .secao-curriculo div a {
+        margin: 0 auto;
+    }
+
+    .secao-curriculo div h2 {
+        font-size: 2em;
+        line-height: 30px;
+    }
+
+    .secao-curriculo div p {
+        font-size: 1.3em;
+    }
+}

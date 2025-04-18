@@ -460,6 +460,7 @@ section.especialidades {
 
             ul {
                 display: flex;
+                align-items: center;
             }
         }
     }
@@ -534,24 +535,24 @@ section.portifolio {
                     top: 0;
                     transition: .5s;
                     width: 100%;
-                    span {
-                        align-items: center;
-                        justify-content: center;
-                        margin-top: 65%;
-                    }
+                    // span {
+                    //     align-items: center;
+                    //     justify-content: center;
+                    //     margin-top: 65%;
+                    // }
                     a {
                         color: #fff;
                         text-align: center;
                         text-decoration: none;
                         font-size: 1.5rem;
-                        display: flex;
-                        align-items: center;
-                        justify-content: center;
-                        gap: .6rem;
-                        height: 100%;
-                        margin-top: 1.5rem;
+                        // display: flex;
+                        // align-items: center;
+                        // justify-content: center;
+                        // gap: .6rem;
+                        // height: 100%;
+                        // margin-top: 1.5rem;
                         z-index: 100;
-                        margin-bottom: 70%;
+                        // margin-bottom: 70%;
                         border: 1px solid #fff;
                         padding: .7rem 1rem;
                         border-radius: 5;

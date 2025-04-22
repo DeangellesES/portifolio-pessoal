@@ -95,3 +95,10 @@ const swiper = new Swiper('.swiper', {
     },
 
 });
+
+// ESCONDER MENU AO SCROLAR
+let hamburguer = document.querySelector(".navegacao-primaria")
+
+window.onscroll = () => {
+    hamburguer.classList.remove('ativo')
+}

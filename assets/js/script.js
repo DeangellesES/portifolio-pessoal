@@ -102,3 +102,16 @@ let hamburguer = document.querySelector(".navegacao-primaria")
 window.onscroll = () => {
     hamburguer.classList.remove('ativo')
 }
+
+// TIRAR SETA AO CHEGAR AO TOPO
+// let seta = document.querySelector('.seta-subir')
+// let topo = document.querySelector('#topo')
+// let cont = 0
+
+// if (topo) {
+//     seta.classList.add('esconder')
+// }
+
+// window.onscroll = () => {
+//     hamburguer.classList.remove('esconder')
+// }

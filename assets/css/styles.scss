@@ -120,6 +120,10 @@ main .seta-subir {
     border-radius: 50%;
 }
 
+main .seta-subir.esconder {
+    display: none;
+}
+
 /* SEÇÃO DESCRIÇÃO INICIAL*/
 .secao-curriculo {
     align-items: center;
@@ -320,6 +324,7 @@ section.especialidades {
 .my_resume {
     color: $cor-secundaria;
     padding: 50px 0;
+    margin-top: 7rem;
 
     h3 {
         color: #3e3d3d;
@@ -574,6 +579,16 @@ section.portifolio {
                     a:hover {
                         box-shadow: 0 0 40px 10px #000;
                         transform: scale(1.05);
+                        
+                    }
+                    .menu-modal-container {
+                        text-align: center;
+                        color: #000;
+                        background-color: #fff;
+
+                        .xis {
+                            text-align: end;
+                        }
                         
                     }
                 }

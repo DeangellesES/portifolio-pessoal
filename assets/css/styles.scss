@@ -47,10 +47,10 @@ body {
 
 /* CABECALHO */
 header {
-    align-items: center;
-    background-color: $cor-de-fundo-secao;
     display: flex;
+    align-items: center;
     justify-content: space-between;
+    background-color: $cor-de-fundo-secao;
     padding: 35px;
 
     h1 {
@@ -65,8 +65,8 @@ header {
 }
 
 nav .navegacao-primaria {
-    align-items: center;
     display: flex;
+    align-items: center;
     gap: 30px;
 
     .navegacao-primaria__item {
@@ -105,9 +105,6 @@ nav .navegacao-primaria {
 .navegacao-primaria__item:hover::after {
     width: 100%;
 }
-
-
-
 
 /* SEÇÃO DESCRIÇÃO INICIAL*/
 .secao-curriculo {
@@ -462,6 +459,10 @@ section.especialidades {
                 display: flex;
                 align-items: center;
             }
+
+            img:hover {
+                transform: rotate(20deg);
+            }
         }
     }
 }
@@ -578,6 +579,7 @@ section.portifolio {
 
             .img-port:hover {
                 background-position: 100% 100%;
+                transform: scale(1.07);
             }
 
         }
@@ -643,7 +645,7 @@ footer {
 @media(max-width:480px) {
 
     // CABECALHO CABECALHO CABECALHO
-    header .bg i {
+    header i {
         position: absolute;
         right: 50px;
         color: $cor-secundaria;
@@ -654,11 +656,11 @@ footer {
         font-size: 2.5rem;
     }
 
-    header .bg nav ul {
+    header nav ul {
         display: none;
     }
 
-    header .bg nav ul.ativo {
+    header nav ul.ativo {
         display: flex;
         flex-direction: column;
         position: absolute;

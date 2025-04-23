@@ -582,12 +582,29 @@ section.portifolio {
                         
                     }
                     .menu-modal-container {
+                        display: flex;
                         text-align: center;
                         color: #000;
                         background-color: #fff;
+                        width: 90%;
+                        padding: 3rem 1rem;
+                        border: 2px solid #000;
+                        justify-content: center;
+                        align-items: center;
 
-                        .xis {
-                            text-align: end;
+                        .menu-modal {
+                            
+                            .modal-projeto{
+                                display: flex;
+                                flex-direction: column;
+                                gap: .6rem;
+                                align-items: center;
+                                margin-top: 1.6rem;
+                                img {
+                                    width: 10rem;
+                                    height: 2.5rem;
+                                }
+                            }
                         }
                         
                     }

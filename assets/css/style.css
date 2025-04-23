@@ -426,24 +426,11 @@ section.portifolio {
           box-shadow: 0 0 40px 10px #000;
           transform: scale(1.05); }
         section.portifolio .portifolio-interface .flex .img-port .overlay .menu-modal-container {
-          display: flex;
           text-align: center;
           color: #000;
-          background-color: #fff;
-          width: 90%;
-          padding: 3rem 1rem;
-          border: 2px solid #000;
-          justify-content: center;
-          align-items: center; }
-          section.portifolio .portifolio-interface .flex .img-port .overlay .menu-modal-container .menu-modal .modal-projeto {
-            display: flex;
-            flex-direction: column;
-            gap: .6rem;
-            align-items: center;
-            margin-top: 1.6rem; }
-            section.portifolio .portifolio-interface .flex .img-port .overlay .menu-modal-container .menu-modal .modal-projeto img {
-              width: 10rem;
-              height: 2.5rem; }
+          background-color: #fff; }
+          section.portifolio .portifolio-interface .flex .img-port .overlay .menu-modal-container .xis {
+            text-align: end; }
       section.portifolio .portifolio-interface .flex .img-port .overlay:hover {
         opacity: 30; }
     section.portifolio .portifolio-interface .flex .img-port:hover {
@@ -598,4 +585,4 @@ footer {
     flex-wrap: wrap;
     gap: 20px; } }
 
-/*# sourceMappingURL=styles.css.map */
+/*# sourceMappingURL=style.css.map */

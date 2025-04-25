@@ -78,6 +78,7 @@ function MENUCLICK() {
 
 MENUCLICK()
 
+// SWIPER NOS PROJETOS
 const swiper = new Swiper('.swiper', {
     slidesPerView: 6,
     autoplay: {
@@ -103,15 +104,30 @@ window.onscroll = () => {
     hamburguer.classList.remove('ativo')
 }
 
-// TIRAR SETA AO CHEGAR AO TOPO
-// let seta = document.querySelector('.seta-subir')
-// let topo = document.querySelector('#topo')
-// let cont = 0
+// ESCONDER SETA COM INTERVAL E FAZER APARECER COM SCROLL
+setInterval(setaSubir, 4500)
 
-// if (topo) {
-//     seta.classList.add('esconder')
-// }
+let setaCima = document.querySelector('.seta-subir')
 
-// window.onscroll = () => {
-//     hamburguer.classList.remove('esconder')
-// }
+function setaSubir () { 
+    setaCima.classList.add('esconder')
+}
+
+window.onscroll = () => {
+    setaCima.classList.remove('esconder')
+}
+
+// SWIPER NAS SKILLS
+// const swiperHabilidades = new Swiper('.swiper-habilidades', {
+//     // slidesPerView: 6,
+//     autoplay: {
+//         delay: 1000,
+//         // disableOnInteraction: false,
+//     },
+
+//     // Optional parameters
+//     loop: true,
+
+    
+
+// });

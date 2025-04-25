@@ -107,6 +107,7 @@ nav .navegacao-primaria {
 }
 
 // PRINCIPAL
+// SETA PARA SUBIR
 main .seta-subir {
     color: #fff;
     font-size: 5rem;
@@ -479,6 +480,11 @@ section.especialidades {
     }
 }
 
+// .swiper-habilidades {
+//     width: 200px;
+//     height: 100px;
+// }
+
 /*PORTIFOLIO*/
 section.portifolio {
     padding: 80px 4%;
@@ -487,6 +493,7 @@ section.portifolio {
     .swiper {
         width: 100%;
         height: 650px;
+
         .swiper-slide {
             box-shadow: 0px 0px 10px #ffffff78;
         }
@@ -531,6 +538,7 @@ section.portifolio {
                 transition: 8s;
                 max-width: 20rem;
                 min-width: 20rem;
+
                 .overlay {
                     align-items: center;
                     background-color: rgba(0, 0, 0, 0.5);
@@ -548,6 +556,7 @@ section.portifolio {
                     top: 0;
                     transition: .5s;
                     width: 100%;
+
                     // span {
                     //     align-items: center;
                     //     justify-content: center;
@@ -570,17 +579,19 @@ section.portifolio {
                         padding: .7rem 1rem;
                         border-radius: 5;
                         transition: .5s;
-                        
+
                         i {
                             font-size: .9rem;
                             margin-top: .5rem;
                         }
                     }
+
                     a:hover {
                         box-shadow: 0 0 40px 10px #000;
                         transform: scale(1.05);
-                        
+
                     }
+
                     .menu-modal-container {
                         display: flex;
                         text-align: center;
@@ -593,27 +604,28 @@ section.portifolio {
                         align-items: center;
 
                         .menu-modal {
-                            
-                            .modal-projeto{
+
+                            .modal-projeto {
                                 display: flex;
                                 flex-direction: column;
                                 gap: .6rem;
                                 align-items: center;
                                 margin-top: 1.6rem;
+
                                 img {
                                     width: 10rem;
                                     height: 2.5rem;
                                 }
                             }
                         }
-                        
+
                     }
                 }
 
                 .overlay:hover {
                     opacity: 30;
                 }
-                
+
             }
 
             .img-port:hover {
@@ -682,6 +694,7 @@ footer {
 // RESPONSIVIDADE RESPONSIVIDADE RESPONSIVIDADE RESPONSIVIDADE
 // MOBILE
 @media(max-width:480px) {
+
     // CABECALHO CABECALHO CABECALHO
     header .bg i {
         color: $cor-secundaria;

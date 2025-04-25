@@ -109,7 +109,7 @@ setInterval(setaSubir, 4500)
 
 let setaCima = document.querySelector('.seta-subir')
 
-function setaSubir () { 
+function setaSubir() {
     setaCima.classList.add('esconder')
 }
 
@@ -117,17 +117,35 @@ window.onscroll = () => {
     setaCima.classList.remove('esconder')
 }
 
-// SWIPER NAS SKILLS
-// const swiperHabilidades = new Swiper('.swiper-habilidades', {
-//     // slidesPerView: 6,
-//     autoplay: {
-//         delay: 1000,
-//         // disableOnInteraction: false,
-//     },
+// MODAL
+let verModalCorpo = document.querySelector(".menu-modal-container")
+let verModalBox = document.querySelector(".menu-modal")
 
-//     // Optional parameters
-//     loop: true,
+document.querySelectorAll(".portifolio .img-port").forEach(menu => {
+    menu.onclick = () => {
+        verModalCorpo.style.display = 'flex'
+        let nome = menu.getAttribute('data-name')
 
-    
+        // verModalBox.forEach(visualizar => {
+        //     let chamada = visualizar.getAttribute('data-target')
+        //     if (nome == chamada) {
+        //         visualizar.classList.add('active')
+        //     }
+        // })
+    }
+})
 
-// });
+// verModalCorpo.querySelector("#fechar").onclick = () => {
+//     verModalCorpo.style.display = 'none'
+//     verModalCorpo.classList.remove('active')
+
+// }
+
+let xis = document.querySelector("#fechar")
+
+xis.addEventListener("click", esconderPeloX)
+
+function esconderPeloX () {
+    verModalCorpo.style.display = 'none'
+    verModalCorpo.classList.add('active')
+}

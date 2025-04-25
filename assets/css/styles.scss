@@ -480,10 +480,6 @@ section.especialidades {
     }
 }
 
-// .swiper-habilidades {
-//     width: 200px;
-//     height: 100px;
-// }
 
 /*PORTIFOLIO*/
 section.portifolio {
@@ -557,24 +553,15 @@ section.portifolio {
                     transition: .5s;
                     width: 100%;
 
-                    // span {
-                    //     align-items: center;
-                    //     justify-content: center;
-                    //     margin-top: 65%;
-                    // }
+                    
                     a {
                         color: #fff;
                         text-align: center;
                         text-decoration: none;
                         font-size: 1.5rem;
-                        // display: flex;
-                        // align-items: center;
-                        // justify-content: center;
-                        // gap: .6rem;
-                        // height: 100%;
-                        // margin-top: 1.5rem;
+                        
                         z-index: 100;
-                        // margin-bottom: 70%;
+                      
                         border: 1px solid #fff;
                         padding: .7rem 1rem;
                         border-radius: 5;
@@ -593,7 +580,7 @@ section.portifolio {
                     }
 
                     .menu-modal-container {
-                        display: flex;
+                        display: none;
                         text-align: center;
                         color: #000;
                         background-color: #fff;
@@ -602,8 +589,12 @@ section.portifolio {
                         border: 2px solid #000;
                         justify-content: center;
                         align-items: center;
+                        
 
                         .menu-modal {
+                            .active {
+                                display: none;
+                            }
 
                             .modal-projeto {
                                 display: flex;

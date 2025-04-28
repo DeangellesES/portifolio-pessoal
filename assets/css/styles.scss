@@ -51,11 +51,14 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    background-image: linear-gradient(#000, rgba(4, 4, 19, 0.89));
-    padding: 30px 35px 30px 0;
+    background-color: #03030ef3;
+    // background: linear-gradient(#000, rgba(6, 6, 32, 0.89));
+    // background-image: linear-gradient(#000, rgba(6, 6, 32, 0.89));
+    padding: 30px 0;
     position: fixed;
     width: 100%;
     z-index: 10;
+    box-shadow: 0 0 10px 5px #ffffff1d;;
     h1 {
         color: $cor-secundaria;
         font-size: 2em;
@@ -64,6 +67,10 @@ header {
         span {
             color: $cor-padrao;
         }
+    }
+
+    .bg .esconder-bars {
+        display: none;
     }
 }
 
@@ -82,6 +89,9 @@ nav .navegacao-primaria {
 
     .navegacao-primaria__item:hover {
         color: $cor-hover;
+        // background-color: $cor-padrao;
+        // padding: .7rem 1.4rem;
+        // border-radius: 25px;
     }
 
     .navegacao-primaria__btn {
@@ -133,14 +143,14 @@ main .seta-subir.esconder {
     align-items: center;
     /*Chamando keyframes para fazer tela descer devagar com efeito*/
     animation: inicializar .7s forwards;
-    background-color: $cor-de-fundo-secao;
+    // background-color: $cor-de-fundo-secao;
     box-shadow: 0 0 40px 10px #ffffff1d;
-    display: grid;
+    display: flex;
     gap: 60px;
-    grid-template-columns: 1fr 1fr;
+    // grid-template-columns: 1fr 300px 1fr;
     justify-content: space-around;
-    padding: 60px;
-    height: 110vh;
+    padding: 50px;
+    height: 120vh;
 
     div {
         display: grid;
@@ -175,7 +185,23 @@ main .seta-subir.esconder {
         border-radius: 30%;
         max-width: 100%;
         position: relative;
+        margin-right: -45px;
     }
+
+    .sociais {
+        width: 6%;
+        
+        a {
+            border: none;
+        }
+        
+        i {
+            cursor: pointer;
+            font-size: 1.5rem;
+        }
+    }
+
+   
 }
 
 /* Animação para fazer tela descer devagar com efeito */

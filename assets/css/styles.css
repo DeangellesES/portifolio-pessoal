@@ -38,17 +38,20 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  background-image: linear-gradient(#000, rgba(4, 4, 19, 0.89));
-  padding: 30px 35px 30px 0;
+  background-color: #03030ef3;
+  padding: 30px 0;
   position: fixed;
   width: 100%;
-  z-index: 10; }
+  z-index: 10;
+  box-shadow: 0 0 10px 5px #ffffff1d; }
   header h1 {
     color: #fff;
     font-size: 2em;
     font-weight: 700; }
     header h1 span {
       color: #1c3070; }
+  header .bg .esconder-bars {
+    display: none; }
 
 nav .navegacao-primaria {
   display: flex;
@@ -103,14 +106,12 @@ main .seta-subir.esconder {
   align-items: center;
   /*Chamando keyframes para fazer tela descer devagar com efeito*/
   animation: inicializar .7s forwards;
-  background-color: black;
   box-shadow: 0 0 40px 10px #ffffff1d;
-  display: grid;
+  display: flex;
   gap: 60px;
-  grid-template-columns: 1fr 1fr;
   justify-content: space-around;
-  padding: 60px;
-  height: 110vh; }
+  padding: 50px;
+  height: 120vh; }
   .secao-curriculo div {
     display: grid;
     gap: 30px; }
@@ -135,7 +136,15 @@ main .seta-subir.esconder {
     animation: flutuar 2s ease-in-out infinite alternate;
     border-radius: 30%;
     max-width: 100%;
-    position: relative; }
+    position: relative;
+    margin-right: -45px; }
+  .secao-curriculo .sociais {
+    width: 6%; }
+    .secao-curriculo .sociais a {
+      border: none; }
+    .secao-curriculo .sociais i {
+      cursor: pointer;
+      font-size: 1.5rem; }
 
 /* Animação para fazer tela descer devagar com efeito */
 @keyframes inicializar {

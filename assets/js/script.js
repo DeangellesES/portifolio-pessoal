@@ -155,3 +155,24 @@ document.querySelectorAll(".portifolio .modal-projeto").forEach(menu => {
 //     verModalCorpo.style.display = 'none'
 //     verModalCorpo.classList.toggle('active')
 // }
+
+// TROCAR COR DE FUNDO 
+// let mudarCorFundo = document.querySelector('.trocar')
+// let cabecalho = document.querySelector('.cabecalho')
+// let sobre = document.querySelector('.sobre')
+// let curriculo = document.querySelector('.secao-curriculo')
+// let especialidades = document.querySelector('.especialidades')
+// let reusmo = document.querySelector('.my_resume')
+// let portifolio = document.querySelector('.portifolio')
+// let rodape = document.querySelector('.footer')
+
+// mudarCorFundo.addEventListener('click', () => {
+//     cabecalho.style.backgroundColor = 'gray'
+//     curriculo.style.backgroundColor = 'white'
+//     curriculo.style.color = 'black'
+//     sobre.style.backgroundColor = 'gray'
+//     especialidades.style.backgroundColor = 'white'
+//     reusmo.style.backgroundColor = 'gray'
+//     portifolio.style.backgroundColor = 'white'
+//     rodape.style.backgroundColor = 'white'
+// })

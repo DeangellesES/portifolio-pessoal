@@ -121,7 +121,7 @@ window.onscroll = () => {
 let verModalCorpo = document.querySelector(".menu-modal-container")
 let verModalBox = document.querySelector(".menu-modal")
 
-document.querySelectorAll(".portifolio .img-port").forEach(menu => {
+document.querySelectorAll(".portifolio .modal-projeto").forEach(menu => {
     menu.onclick = () => {
         verModalCorpo.style.display = 'flex'
         let nome = menu.getAttribute('data-name')
@@ -141,11 +141,17 @@ document.querySelectorAll(".portifolio .img-port").forEach(menu => {
 
 // }
 
-let xis = document.querySelector("#fechar")
+// let xis = document.querySelector("#fechar")
 
-xis.addEventListener("click", esconderPeloX)
+// xis.addEventListener("click", esconderPeloX)
 
-function esconderPeloX () {
-    verModalCorpo.style.display = 'none'
-    verModalCorpo.classList.add('active')
-}
+// function esconderPeloX () {
+//     verModalCorpo.style.display = 'none'
+//     verModalCorpo.classList.add('active')
+// }
+
+// let descricao = document.querySelector(".modal-projeto")
+// descricao.onclick = () => {
+//     verModalCorpo.style.display = 'none'
+//     verModalCorpo.classList.toggle('active')
+// }

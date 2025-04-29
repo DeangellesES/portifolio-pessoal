@@ -109,17 +109,19 @@ main .seta-subir.esconder {
   box-shadow: 0 0 40px 10px #ffffff1d;
   display: flex;
   gap: 60px;
-  justify-content: space-around;
-  padding: 50px;
-  height: 120vh; }
-  .secao-curriculo div {
+  justify-content: space-between;
+  padding: 90px;
+  height: 90vh; }
+  .secao-curriculo .secao-curriculo_texto {
     display: grid;
-    gap: 30px; }
-    .secao-curriculo div p {
+    gap: 30px;
+    padding: 10rem 2rem;
+    background: radial-gradient(circle, rgba(30, 24, 115, 0.75) 0%, rgba(11, 11, 33, 0.36) 35%, rgba(0, 0, 0, 0.17) 100%); }
+    .secao-curriculo .secao-curriculo_texto p {
       color: #fff;
       font-weight: 700;
       line-height: 1.4rem; }
-    .secao-curriculo div a {
+    .secao-curriculo .secao-curriculo_texto a {
       border-radius: 5px;
       border: 2px solid #fff;
       color: #fff;
@@ -139,8 +141,12 @@ main .seta-subir.esconder {
     position: relative;
     margin-right: -45px; }
   .secao-curriculo .sociais {
-    width: 6%; }
+    display: flex;
+    flex-direction: column;
+    width: 4%;
+    margin: 0 -3rem 0 4rem; }
     .secao-curriculo .sociais a {
+      margin-top: 4rem;
       border: none; }
     .secao-curriculo .sociais i {
       cursor: pointer;

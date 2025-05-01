@@ -451,9 +451,13 @@ section.portifolio {
           padding: 3rem 1rem;
           border: 2px solid #000;
           justify-content: center;
-          align-items: center; }
-          section.portifolio .portifolio-interface .flex .img-port .overlay .menu-modal-container .active {
-            display: block; }
+          align-items: center;
+          position: relative; }
+          section.portifolio .portifolio-interface .flex .img-port .overlay .menu-modal-container .fechar {
+            position: absolute;
+            top: 0;
+            right: 0;
+            padding: 5px 8px 0 0; }
         section.portifolio .portifolio-interface .flex .img-port .overlay .modal-projeto {
           display: flex;
           flex-direction: column;

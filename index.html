@@ -46,7 +46,8 @@
         <h2 class="digitando">Desenvolvedor Full-stack</h2>
         <!-- FIM TITULO SECAO CV-->
         <p>
-          Olá! Meu nome é Felipe, sou Desenvolvedor de Software e estou graduando em Engenharia de Software. Seja bem-vindo ao meu
+          Olá! Meu nome é Felipe, sou Desenvolvedor de Software e estou graduando em Engenharia de Software. Seja
+          bem-vindo ao meu
           portifólio!
         </p>
         <a href="curriculoportifolio.pdf">Download CV</a>
@@ -66,26 +67,35 @@
     <!--INICIO SEÇÃO SOBRE-->
     <section aria-label="seção sobre mim" class="sobre" id="sobre">
       <div class="titulo-generico">
-        <h1>About me</h1>
+        <!-- <h1>About me</h1> -->
+        <h1>Sobre Mim</h1>
       </div>
       <div class="sobre-conteudo">
         <div class="sobre-texto">
-          <h1>I'm Dev Felipe Deangelles</h1>
+          <!-- <h1>I'm Dev Felipe Deangelles</h1> -->
+          <h1>Eu sou o Dev Felipe Deangelles</h1>
         </div>
         <div class="sobre_info">
           <p>
-            <i class="fa-solid fa-calendar-days"></i>Date of birth:19 jun 1996
+            <i class="fa-solid fa-calendar-days"></i>
+            <!-- Date of birth:19 jun 1996 -->
+            Data de Aniversário: 19 junho 1996
           </p>
           <!-- <p><i class="fa-solid fa-laptop"></i>Freelance: Available</p> -->
           <p>
-            <i class="fa-solid fa-location-dot"></i>Address: Minas Gerais, Brazil
+            <i class="fa-solid fa-location-dot"></i>
+            <!-- Address: Minas Gerais, Brazil -->
+            Endereço: Minas Gerais, Brazil
           </p>
           <!-- <p>
             <i class="fa-solid fa-globe"></i>Spoken Langages: Brazil, Espanhol
             and English
           </p> -->
           <!-- <p><i class="fa-solid fa-flag"></i>Nationalily: Russian</p> -->
-          <p><i class="fa-solid fa-phone-volume"></i>Phone +35 99763-1949</p>
+          <p><i class="fa-solid fa-phone-volume"></i>
+            <!-- Phone +35 99763-1949 -->
+            Telefone: 35 99763-1949
+          </p>
           <p>
             <i class="fa-solid fa-envelope"></i>Email: FelipeDeangelles@hotmail.com
           </p>
@@ -134,7 +144,7 @@
 
       <div class="resumo_generico">
         <!-- INICIO EXPERIENCIAS -->
-        <h2><i class="fa-solid fa-handshake"></i>Experience</h2>
+        <h2><i class="fa-solid fa-handshake"></i>Experiências</h2>
         <div class="experience_content">
           <div>
             <span>01/2021-04/2021</span>
@@ -158,7 +168,10 @@
         <!-- FIM EXPERIENCIAS -->
 
         <!-- INICIO CURSOS -->
-        <h2 class="education"><i class="fa-solid fa-book"></i>Education</h2>
+        <h2 class="education"><i class="fa-solid fa-book"></i>
+          <!-- Education -->
+          Formação
+        </h2>
         <div class="education_content">
           <div>
             <span>2022-2026</span>
@@ -199,7 +212,7 @@
       <!-- INICIO HABILIDADES -->
       <div class="skills">
         <div class="my_skill">
-          <h2><i class="fa-sharp fa-solid fa-star"></i>My skills</h2>
+          <h2><i class="fa-sharp fa-solid fa-star"></i>Minhas habilidades</h2>
           <!-- 1 / 3 -->
           <div class="skills-colunms">
             <div>
@@ -427,8 +440,8 @@
     <!--INÍCIO PORTIFÓLIO-->
     <section class="portifolio" id="portifolio">
       <div class="swiper portifolio-interface">
-        <h2 class="portifolio-titulo">MEU <span>PORTIFÓLIO.</span></h2>
-        <h3>Alguns projetos</h3>
+        <h2 class="portifolio-titulo">Meu <span>Portifólio</span></h2>
+        <h3>Alguns Projetos</h3>
         <div class="swiper-wrapper flex">
           <div class="swiper-slide img-port" style="background-image: url(assets/img/site-hamburgueria.png);">
             <div class="overlay" data-name="">
@@ -436,19 +449,12 @@
                 target="_blank">Site <i class="fa-solid fa-arrow-right"></i></a>
               <div class="modal-projeto">Detalhes tecnicos<i class="fa-regular fa-square-caret-down"></i></div>
               <!-- INICIO MODAL PARA OS PROJETOS -->
-              <div class="menu-modal-container">
-                <!-- <div id="fechar" class="fas fa-times"></div> -->
-                <div class="menu-modal" data-target="projeto">
-                  <p>Site de uma hamburgueria com bastante efeito na tela</p> <br>
+              <div id="modal-zero" class="menu-modal-container">
+                <i id="fechar" class="fas fa-times fechar"></i>
+                <div class="menu-modal">
+                  <p>Site para uma hamburgueria com bastante efeito na tela</p> <br>
                   <h4>Tecnologias utilizadas:</h4>
                   <p>JavaScript - HTML - CSS</p>
-                  <!-- <div class="modal-projeto">
-                    <img src="https://img.shields.io/badge/HTML-239120?style=for-the-badge&logo=html5&logoColor=white">
-                    <img src="https://img.shields.io/badge/CSS-239120?&style=for-the-badge&logo=css3&logoColor=white">
-                    <img
-                      src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black">
-                  </div> -->
-
                 </div>
               </div>
               <!-- INICIO MODAL PARA OS PROJETOS -->
@@ -458,6 +464,17 @@
             <div class="overlay" data-name="">
               <a href="https://deangelleses.github.io/loja_ficticia-Bootstrap/" target="_blank">Site <i
                   class="fa-solid fa-arrow-right"></i></a>
+              <div id="modal-projeto-um" class="modal-projeto">Detalhes tecnicos<i class="fa-regular fa-square-caret-down"></i></div>
+              <!-- INICIO MODAL PARA OS PROJETOS -->
+              <div id="modal-um" class="menu-modal-container">
+                <i id="fechar-um" class="fas fa-times fechar"></i>
+                <div  id="menu-modal-um" class="menu-modal">
+                  <p>Site para uma loja</p> <br>
+                  <h4>Tecnologias utilizadas:</h4>
+                  <p>HTML - CSS - Bootstrap</p>
+                </div>
+              </div>
+              <!-- INICIO MODAL PARA OS PROJETOS -->
             </div>
           </div>
           <div class="swiper-slide img-port" style="background-image: url(assets/img/site-ecommerce.png);">

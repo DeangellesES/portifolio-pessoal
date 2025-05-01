@@ -117,44 +117,31 @@ window.onscroll = () => {
     setaCima.classList.remove('esconder')
 }
 
-// MODAL
-let verModalCorpo = document.querySelector(".menu-modal-container")
+// CHAMAR MODAL E ESCONDER
+let verModalCorpo = document.querySelector("#modal-zero")
 let verModalBox = document.querySelector(".menu-modal")
+let abrirModal = document.querySelector(".modal-projeto")
+let fechar = document.querySelector("#fechar")
 
-document.querySelectorAll(".portifolio .modal-projeto").forEach(menu => {
-    menu.onclick = () => {
-        verModalCorpo.style.display = 'flex'
-        let nome = menu.getAttribute('data-name')
-
-        // verModalBox.forEach(visualizar => {
-        //     let chamada = visualizar.getAttribute('data-target')
-        //     if (nome == chamada) {
-        //         visualizar.classList.add('active')
-        //     }
-        // })
-    }
+abrirModal.addEventListener('click', ()=> {
+    verModalCorpo.style.display = 'flex'
+})
+fechar.addEventListener('click', ()=> {
+    verModalCorpo.style.display = 'none'
 })
 
-// verModalCorpo.querySelector("#fechar").onclick = () => {
-//     verModalCorpo.style.display = 'none'
-//     verModalCorpo.classList.remove('active')
+let verModalCorpo1 = document.querySelector("#modal-um")
+let verModalBox1 = document.querySelector("#menu-modal-um")
+let abrirModal1 = document.querySelector("#modal-projeto-um")
+let fechar1 = document.querySelector("#fechar-um")
 
-// }
+abrirModal1.addEventListener('click', ()=> {
+    verModalCorpo1.style.display = 'flex'
+})
+fechar1.addEventListener('click', ()=> {
+    verModalCorpo1.style.display = 'none'
+})
 
-// let xis = document.querySelector("#fechar")
-
-// xis.addEventListener("click", esconderPeloX)
-
-// function esconderPeloX () {
-//     verModalCorpo.style.display = 'none'
-//     verModalCorpo.classList.add('active')
-// }
-
-// let descricao = document.querySelector(".modal-projeto")
-// descricao.onclick = () => {
-//     verModalCorpo.style.display = 'none'
-//     verModalCorpo.classList.toggle('active')
-// }
 
 // TROCAR COR DE FUNDO 
 // let mudarCorFundo = document.querySelector('.trocar')

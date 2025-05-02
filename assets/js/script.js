@@ -117,7 +117,7 @@ window.onscroll = () => {
     setaCima.classList.remove('esconder')
 }
 
-// CHAMAR MODAL E ESCONDER
+// CHAMAR MODAL E ESCONDER // CHAMAR MODAL E ESCONDER // CHAMAR MODAL E ESCONDER
 let verModalCorpo = document.querySelector("#modal-zero")
 let verModalBox = document.querySelector(".menu-modal")
 let abrirModal = document.querySelector(".modal-projeto")
@@ -142,6 +142,29 @@ fechar1.addEventListener('click', ()=> {
     verModalCorpo1.style.display = 'none'
 })
 
+let verModalCorpo2 = document.querySelector("#modal-dois")
+let verModalBox2 = document.querySelector("#menu-modal-dois")
+let abrirModal2 = document.querySelector("#modal-projeto-dois")
+let fechar2 = document.querySelector("#fechar-dois")
+
+abrirModal2.addEventListener('click', ()=> {
+    verModalCorpo2.style.display = 'flex'
+})
+fechar2.addEventListener('click', ()=> {
+    verModalCorpo2.style.display = 'none'
+})
+
+let verModalCorpo3 = document.querySelector("#modal-tres")
+let verModalBox3 = document.querySelector("#menu-modal-tres")
+let abrirModal3 = document.querySelector("#modal-projeto-tres")
+let fechar3 = document.querySelector("#fechar-tres")
+
+abrirModal3.addEventListener('click', ()=> {
+    verModalCorpo3.style.display = 'flex'
+})
+fechar3.addEventListener('click', ()=> {
+    verModalCorpo3.style.display = 'none'
+})
 
 // TROCAR COR DE FUNDO 
 // let mudarCorFundo = document.querySelector('.trocar')

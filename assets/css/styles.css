@@ -151,6 +151,13 @@ main .seta-subir.esconder {
     .secao-curriculo .sociais i {
       cursor: pointer;
       font-size: 1.5rem; }
+    .secao-curriculo .sociais :hover i {
+      color: #1c3070; }
+    .secao-curriculo .sociais .secao-curriculo-listra {
+      height: 80px;
+      border-right: 2px solid #fff;
+      margin-top: 3rem;
+      margin-right: 1rem; }
 
 /* Animação para fazer tela descer devagar com efeito */
 @keyframes inicializar {
@@ -183,9 +190,11 @@ main .seta-subir.esconder {
   padding: 140px 0; }
   .sobre .titulo-generico h1 {
     color: #1c3070;
-    font-size: 3em;
+    font-size: 2.5em;
     margin: 30px 0;
     text-align: center; }
+  .sobre .titulo-generico span {
+    color: #fff; }
   .sobre .sobre-conteudo {
     /*chama keyframe pra fazer o conteudo vir de lado*/
     animation: sobeSecao .9s ease-in-out forwards;
@@ -231,7 +240,11 @@ section.especialidades {
   box-shadow: 0 0 40px 10px #ffffff1d;
   padding: 180px 4%; }
   section.especialidades .flex {
-    justify-content: space-around; }
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 5rem; }
+  section.especialidades .especialidades-titulo {
+    font-size: 2.5rem; }
   section.especialidades .especialidades-box {
     border-radius: 20px;
     color: #fff;
@@ -255,6 +268,8 @@ section.especialidades {
   color: #fff;
   padding: 50px 0;
   margin-top: 7rem; }
+  .my_resume .titulo-generico h2 {
+    font-size: 2.5rem; }
   .my_resume h3 {
     color: #3e3d3d;
     text-align: center;
@@ -270,7 +285,7 @@ section.especialidades {
       font-family: 'Poppins';
       font-size: 1.5rem;
       justify-self: start;
-      padding: 20px;
+      padding: 10px 20px;
       margin-bottom: 30px; }
     .my_resume .resumo_generico .education {
       margin-bottom: 30px;
@@ -394,6 +409,9 @@ section.portifolio {
     section.portifolio .swiper .swiper-pagination {
       background-color: #000;
       color: #fff; }
+  section.portifolio .portifolio-interface .portifolio-titulo {
+    font-size: 2.5rem;
+    font-weight: 700; }
   section.portifolio .portifolio-interface h3 {
     color: #3e3d3d;
     font-size: 1.7em;

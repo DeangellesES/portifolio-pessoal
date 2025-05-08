@@ -118,6 +118,7 @@ window.onscroll = () => {
 }
 
 // CHAMAR MODAL E ESCONDER // CHAMAR MODAL E ESCONDER // CHAMAR MODAL E ESCONDER
+// MODAL 0
 let verModalCorpo = document.querySelector("#modal-zero")
 let verModalBox = document.querySelector(".menu-modal")
 let abrirModal = document.querySelector(".modal-projeto")
@@ -130,6 +131,7 @@ fechar.addEventListener('click', ()=> {
     verModalCorpo.style.display = 'none'
 })
 
+// MODAL 1
 let verModalCorpo1 = document.querySelector("#modal-um")
 let verModalBox1 = document.querySelector("#menu-modal-um")
 let abrirModal1 = document.querySelector("#modal-projeto-um")
@@ -142,6 +144,7 @@ fechar1.addEventListener('click', ()=> {
     verModalCorpo1.style.display = 'none'
 })
 
+// MODAL 2
 let verModalCorpo2 = document.querySelector("#modal-dois")
 let verModalBox2 = document.querySelector("#menu-modal-dois")
 let abrirModal2 = document.querySelector("#modal-projeto-dois")
@@ -154,6 +157,7 @@ fechar2.addEventListener('click', ()=> {
     verModalCorpo2.style.display = 'none'
 })
 
+// MODAL 3
 let verModalCorpo3 = document.querySelector("#modal-tres")
 let verModalBox3 = document.querySelector("#menu-modal-tres")
 let abrirModal3 = document.querySelector("#modal-projeto-tres")
@@ -164,6 +168,71 @@ abrirModal3.addEventListener('click', ()=> {
 })
 fechar3.addEventListener('click', ()=> {
     verModalCorpo3.style.display = 'none'
+})
+
+// MODAL 4
+let verModalCorpo4 = document.querySelector("#modal-quatro")
+let verModalBox4 = document.querySelector("#menu-modal-quatro")
+let abrirModal4 = document.querySelector("#modal-projeto-quatro")
+let fechar4 = document.querySelector("#fechar-quatro")
+
+abrirModal4.addEventListener('click', ()=> {
+    verModalCorpo4.style.display = 'flex'
+})
+fechar4.addEventListener('click', ()=> {
+    verModalCorpo4.style.display = 'none'
+})
+
+// MODAL 5
+let verModalCorpo5 = document.querySelector("#modal-cinco")
+let verModalBox5 = document.querySelector("#menu-modal-cinco")
+let abrirModal5 = document.querySelector("#modal-projeto-cinco")
+let fechar5 = document.querySelector("#fechar-cinco")
+
+abrirModal5.addEventListener('click', ()=> {
+    verModalCorpo5.style.display = 'flex'
+})
+fechar5.addEventListener('click', ()=> {
+    verModalCorpo5.style.display = 'none'
+})
+
+// MODAL 6
+let verModalCorpo6 = document.querySelector("#modal-seis")
+let verModalBox6 = document.querySelector("#menu-modal-seis")
+let abrirModal6 = document.querySelector("#modal-projeto-seis")
+let fechar6 = document.querySelector("#fechar-seis")
+
+abrirModal6.addEventListener('click', ()=> {
+    verModalCorpo6.style.display = 'flex'
+})
+fechar6.addEventListener('click', ()=> {
+    verModalCorpo6.style.display = 'none'
+})
+
+// MODAL 7
+let verModalCorpo7 = document.querySelector("#modal-sete")
+let verModalBox7 = document.querySelector("#menu-modal-sete")
+let abrirModal7 = document.querySelector("#modal-projeto-sete")
+let fechar7 = document.querySelector("#fechar-sete")
+
+abrirModal7.addEventListener('click', ()=> {
+    verModalCorpo7.style.display = 'flex'
+})
+fechar7.addEventListener('click', ()=> {
+    verModalCorpo7.style.display = 'none'
+})
+
+// MODAL 7
+let verModalCorpo8 = document.querySelector("#modal-oito")
+let verModalBox8 = document.querySelector("#menu-modal-oito")
+let abrirModal8 = document.querySelector("#modal-projeto-oito")
+let fechar8 = document.querySelector("#fechar-oito")
+
+abrirModal8.addEventListener('click', ()=> {
+    verModalCorpo8.style.display = 'flex'
+})
+fechar8.addEventListener('click', ()=> {
+    verModalCorpo8.style.display = 'none'
 })
 
 // TROCAR COR DE FUNDO 

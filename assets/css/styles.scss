@@ -208,8 +208,18 @@ main .seta-subir.esconder {
             cursor: pointer;
             font-size: 1.5rem;
         }
-    }
 
+        :hover i {
+            color: $cor-padrao;
+        }
+
+        .secao-curriculo-listra {
+            height: 80px;
+            border-right: 2px solid #fff;
+            margin-top: 3rem;
+            margin-right: 1rem;
+        }
+    }
 
 }
 
@@ -262,9 +272,13 @@ main .seta-subir.esconder {
 
     .titulo-generico h1 {
         color: $cor-padrao;
-        font-size: 3em;
+        font-size: 2.5em;
         margin: 30px 0;
         text-align: center;
+    }
+
+    .titulo-generico span {
+        color: #fff;
     }
 
     .sobre-conteudo {
@@ -331,8 +345,15 @@ section.especialidades {
     box-shadow: 0 0 40px 10px #ffffff1d;
     padding: 180px 4%;
 
+
     .flex {
         justify-content: space-around;
+        flex-wrap: wrap;
+        margin-top: 5rem;
+    }
+
+    .especialidades-titulo {
+        font-size: 2.5rem;
     }
 
     .especialidades-box {
@@ -367,6 +388,10 @@ section.especialidades {
     padding: 50px 0;
     margin-top: 7rem;
 
+    .titulo-generico h2 {
+        font-size: 2.5rem;
+    }
+
     h3 {
         color: #3e3d3d;
         text-align: center;
@@ -385,7 +410,7 @@ section.especialidades {
             font-family: 'Poppins';
             font-size: 1.5rem;
             justify-self: start;
-            padding: 20px;
+            padding: 10px 20px;
             margin-bottom: 30px;
         }
 
@@ -553,6 +578,11 @@ section.portifolio {
     }
 
     .portifolio-interface {
+        .portifolio-titulo {
+            font-size: 2.5rem;
+            font-weight: 700;
+        }
+
         h3 {
             color: #3e3d3d;
             font-size: 1.7em;
@@ -629,6 +659,7 @@ section.portifolio {
                             right: 0;
                             padding: 5px 8px 0 0;
                         }
+
                     }
 
                     .modal-projeto {

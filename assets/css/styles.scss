@@ -287,21 +287,26 @@ main .seta-subir.esconder {
         color: #707070;
         padding: 50px;
 
-        .sobre-texto h1 {
-            color: $cor-secundaria;
-            font-size: 2.3rem;
-            text-align: center;
+        .sobre-texto {
+
+            h2 {
+                color: $cor-secundaria;
+                font-size: 2.3rem;
+                text-align: center;
+            }
         }
 
-        .sobre-texto h1::after {
-            background-color: $cor-padrao;
-            border-radius: 5px;
-            content: '';
-            display: block;
-            height: 6px;
-            margin: 20px 0;
-            width: 60px;
-        }
+
+
+        // .sobre-texto h2::after {
+        //     background-color: $cor-padrao;
+        //     border-radius: 5px;
+        //     content: '';
+        //     display: block;
+        //     height: 6px;
+        //     margin: 20px 0;
+        //     width: 60px;
+        // }
 
         .sobre_info {
             display: grid;

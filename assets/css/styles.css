@@ -200,18 +200,10 @@ main .seta-subir.esconder {
     animation: sobeSecao .9s ease-in-out forwards;
     color: #707070;
     padding: 50px; }
-    .sobre .sobre-conteudo .sobre-texto h1 {
+    .sobre .sobre-conteudo .sobre-texto h2 {
       color: #fff;
       font-size: 2.3rem;
       text-align: center; }
-    .sobre .sobre-conteudo .sobre-texto h1::after {
-      background-color: #1c3070;
-      border-radius: 5px;
-      content: '';
-      display: block;
-      height: 6px;
-      margin: 20px 0;
-      width: 60px; }
     .sobre .sobre-conteudo .sobre_info {
       display: grid;
       gap: 15px;

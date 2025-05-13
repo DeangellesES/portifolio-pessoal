@@ -204,6 +204,11 @@ main .seta-subir.esconder {
       color: #fff;
       font-size: 2.3rem;
       text-align: center; }
+    .sobre .sobre-conteudo .sobre-texto p {
+      text-align: center;
+      padding: 3rem 0;
+      color: #fff;
+      font-size: 1.2rem; }
     .sobre .sobre-conteudo .sobre_info {
       display: grid;
       gap: 15px;
@@ -467,7 +472,9 @@ section.portifolio {
             position: absolute;
             top: 0;
             right: 0;
-            padding: 5px 8px 0 0; }
+            padding: 5px 8px 5px 8px; }
+          section.portifolio .portifolio-interface .flex .img-port .overlay .menu-modal-container .fechar:hover {
+            background-color: #6b6969; }
         section.portifolio .portifolio-interface .flex .img-port .overlay .modal-projeto {
           display: flex;
           flex-direction: column;

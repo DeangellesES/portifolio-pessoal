@@ -294,6 +294,13 @@ main .seta-subir.esconder {
                 font-size: 2.3rem;
                 text-align: center;
             }
+
+            p {
+                text-align: center;
+                padding: 3rem 0;
+                color: $cor-secundaria;
+                font-size: 1.2rem;
+            }
         }
 
 
@@ -662,14 +669,12 @@ section.portifolio {
                             position: absolute;
                             top: 0;
                             right: 0;
-                            padding: 5px 8px 0 0;
-
+                            padding: 5px 8px 5px 8px;                          
                         }
 
-                        // .fechar:hover {
-                        //     color: red;
-                        // }
-
+                        .fechar:hover {
+                                background-color: rgb(107, 105, 105);
+                            }                      
                     }
 
                     .modal-projeto {
@@ -698,7 +703,6 @@ section.portifolio {
                 .overlay:hover {
                     opacity: 30;
                 }
-
             }
 
             .img-port:hover {

@@ -64,10 +64,10 @@ function sobreMim() {
 
 sobreMim()
 
-
+//CLICAR MENU HAMBURGUER
 function MENUCLICK() {
-    const menuClick = document.querySelector('header i')
-    const nav = document.querySelector('header nav ul')
+    const menuClick = document.querySelector('header .esconder-bars')
+    const nav = document.querySelector('header .navegacao ul')
 
     menuClick.addEventListener('click', clicou)
 
@@ -98,7 +98,7 @@ const swiper = new Swiper('.swiper', {
 });
 
 // ESCONDER MENU AO SCROLAR
-let hamburguer = document.querySelector(".navegacao-primaria")
+let hamburguer = document.querySelector(".navegacao ul")
 
 window.onscroll = () => {
     hamburguer.classList.remove('ativo')

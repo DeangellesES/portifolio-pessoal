@@ -525,6 +525,7 @@ section.especialidades {
             margin-bottom: 30px;
             padding: 10px 30px;
             text-transform: capitalize;
+            line-height: 1.4;
         }
 
         .skills-colunms {
@@ -669,12 +670,12 @@ section.portifolio {
                             position: absolute;
                             top: 0;
                             right: 0;
-                            padding: 5px 8px 5px 8px;                          
+                            padding: 5px 8px 5px 8px;
                         }
 
                         .fechar:hover {
-                                background-color: rgb(107, 105, 105);
-                            }                      
+                            background-color: rgb(107, 105, 105);
+                        }
                     }
 
                     .modal-projeto {
@@ -773,18 +774,18 @@ footer {
 @media(max-width:480px) {
 
     // CABECALHO CABECALHO CABECALHO
-    header .bg i {
+    header .bg .esconder-bars {
         color: $cor-secundaria;
         cursor: pointer;
         display: block;
         font-size: 2.5rem;
     }
 
-    header .bg nav ul {
+    header .bg ul {
         display: none;
     }
 
-    header .bg nav ul.ativo {
+    header .bg ul.ativo {
         display: flex;
         flex-direction: column;
         position: absolute;
@@ -824,10 +825,29 @@ footer {
         font-size: 1.7em !important;
     }
 
-    /* SEÇÃO DESCRIÇÃO INICIAL*/
+    .secao-curriculo .sociais {
+        display: none;
+    }
+
+    /* SEÇÃO DESCRIÇÃO INICIAL CURRICULO*/
+    .seta-subir {
+        margin: 0 1.5rem 1.5rem 0!important;
+    }
+
     .secao-curriculo {
         display: flex;
         flex-direction: column;
+        padding: 0;
+        margin: 0;
+        gap: 0;
+        justify-content: center;
+        height: 100vh;
+
+        img {
+            width: 400px;
+            padding: 0;
+            margin: -100px 0 0 0;
+        }
     }
 
     .secao-curriculo div {

@@ -15,7 +15,7 @@ https://deangelleses.github.io/portifolio-pessoal/ -->
 
 <h2>📌 Sobre o Projeto</h2>
 
-<p>Este projeto é o meu portifólio pessoal no qual tem todas as informações pertinentes a mim, Onde demonstros minhas habilidades, alguns projetos, formações, experiências e os meus contatos</p>
+<p>Este projeto é o meu portifólio pessoal no qual tem todas as informações pertinentes a mim, Onde demonstros minhas habilidades, alguns projetos, formações, experiências e os meus contatos. E uma breve apresentação minha para o mercado.</p>
 
 <h2>🚀 Tecnologias Utilizadas</h2>
 <ul>

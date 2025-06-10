@@ -24,7 +24,7 @@ https://deangelleses.github.io/portifolio-pessoal/ -->
 <h2>🚀 Tecnologias Utilizadas</h2>
 <ul>
   <li><b>HTML5</b></li>
-  <li><b>CSS3</b> - Responsivo para mobile</li>
+  <li><b>CSS3</b> - Responsivo para mobile - Sass</li>
   <li><b>JavaScript<b></li>
   <li><b>Swiper</b></li>
 </ul>

@@ -248,6 +248,19 @@ fechar9.addEventListener('click', ()=> {
     verModalCorpo9.style.display = 'none'
 })
 
+// MODAL 10
+let verModalCorpo10 = document.querySelector("#modal-dez")
+let verModalBox10 = document.querySelector("#menu-modal-dez")
+let abrirModal10 = document.querySelector("#modal-projeto-dez")
+let fechar10 = document.querySelector("#fechar-dez")
+
+abrirModal10.addEventListener('click', ()=> {
+    verModalCorpo10.style.display = 'flex'
+})
+fechar10.addEventListener('click', ()=> {
+    verModalCorpo10.style.display = 'none'
+})
+
 // TROCAR COR DE FUNDO 
 // let mudarCorFundo = document.querySelector('.trocar')
 // let cabecalho = document.querySelector('.cabecalho')

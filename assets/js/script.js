@@ -222,7 +222,7 @@ fechar7.addEventListener('click', ()=> {
     verModalCorpo7.style.display = 'none'
 })
 
-// MODAL 7
+// MODAL 8
 let verModalCorpo8 = document.querySelector("#modal-oito")
 let verModalBox8 = document.querySelector("#menu-modal-oito")
 let abrirModal8 = document.querySelector("#modal-projeto-oito")
@@ -235,7 +235,7 @@ fechar8.addEventListener('click', ()=> {
     verModalCorpo8.style.display = 'none'
 })
 
-// MODAL 8
+// MODAL 9
 let verModalCorpo9 = document.querySelector("#modal-nove")
 let verModalBox9 = document.querySelector("#menu-modal-nove")
 let abrirModal9 = document.querySelector("#modal-projeto-nove")
@@ -259,6 +259,19 @@ abrirModal10.addEventListener('click', ()=> {
 })
 fechar10.addEventListener('click', ()=> {
     verModalCorpo10.style.display = 'none'
+})
+
+// MODAL 10
+let verModalCorpo11 = document.querySelector("#modal-onze")
+let verModalBox11 = document.querySelector("#menu-modal-onze")
+let abrirModal11 = document.querySelector("#modal-projeto-onze")
+let fechar11 = document.querySelector("#fechar-onze")
+
+abrirModal11.addEventListener('click', ()=> {
+    verModalCorpo11.style.display = 'flex'
+})
+fechar10.addEventListener('click', ()=> {
+    verModalCorpo11.style.display = 'none'
 })
 
 // TROCAR COR DE FUNDO 

@@ -261,7 +261,7 @@ fechar10.addEventListener('click', ()=> {
     verModalCorpo10.style.display = 'none'
 })
 
-// MODAL 10
+// MODAL 11
 let verModalCorpo11 = document.querySelector("#modal-onze")
 let verModalBox11 = document.querySelector("#menu-modal-onze")
 let abrirModal11 = document.querySelector("#modal-projeto-onze")
@@ -272,6 +272,19 @@ abrirModal11.addEventListener('click', ()=> {
 })
 fechar10.addEventListener('click', ()=> {
     verModalCorpo11.style.display = 'none'
+})
+
+// MODAL 12
+let verModalCorpo12 = document.querySelector("#modal-doze")
+let verModalBox12 = document.querySelector("#menu-modal-doze")
+let abrirModal12 = document.querySelector("#modal-projeto-doze")
+let fechar12 = document.querySelector("#fechar-doze")
+
+abrirModal12.addEventListener('click', ()=> {
+    verModalCorpo12.style.display = 'flex'
+})
+fechar12.addEventListener('click', ()=> {
+    verModalCorpo12.style.display = 'none'
 })
 
 // TROCAR COR DE FUNDO 

@@ -25,12 +25,13 @@ https://deangelleses.github.io/portifolio-pessoal/ -->
 <ul>
   <li><b>HTML5</b></li>
   <li><b>CSS3</b> - Responsivo para mobile - Sass</li>
-  <li><b>JavaScript<b></li>
+  <li><b>JavaScript</b></li>
   <li><b>Swiper</b></li>
 </ul>
 
 <h2>⚙️ Funcionalidades</h2>
 <ul>
+  <li>Informações sobre mim</li>
   <li>Mostrar Minhas Habilidades</li>
   <li>Mostrar Alguns Projetos Relevantes</li>
   <li>Mostrar Meus Contatos</li>

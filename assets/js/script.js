@@ -287,6 +287,19 @@ fechar12.addEventListener('click', ()=> {
     verModalCorpo12.style.display = 'none'
 })
 
+// MODAL 13
+let verModalCorpo13 = document.querySelector("#modal-treze")
+let verModalBox13 = document.querySelector("#menu-modal-treze")
+let abrirModal13 = document.querySelector("#modal-projeto-treze")
+let fechar13 = document.querySelector("#fechar-treze")
+
+abrirModal13.addEventListener('click', ()=> {
+    verModalCorpo13.style.display = 'flex'
+})
+fechar13.addEventListener('click', ()=> {
+    verModalCorpo13.style.display = 'none'
+})
+
 // TROCAR COR DE FUNDO 
 // let mudarCorFundo = document.querySelector('.trocar')
 // let cabecalho = document.querySelector('.cabecalho')

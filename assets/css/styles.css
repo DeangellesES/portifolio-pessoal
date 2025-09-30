@@ -6,6 +6,24 @@ body {
   font-family: 'Nunito Sans', sans-serif;
   position: relative; }
 
+#text {
+  height: 20px;
+  font-size: 4rem;
+  color: #fff; }
+
+#text::after {
+  content: "";
+  width: 3px;
+  height: 50px;
+  display: inline-block;
+  background-color: #fff;
+  animation: flasher 0.6s infinite linear;
+  opacity: 0;
+  margin-left: 10px; }
+
+@keyframes flasher {
+  from {
+    opacity: 1; } }
 .resumo_generico h2 i,
 .my_skill h2 i {
   margin-right: 10px; }
@@ -39,7 +57,7 @@ header {
   align-items: center;
   justify-content: space-around;
   background-color: #03030ee7;
-  padding: 30px 0;
+  padding: 15px 0;
   position: fixed;
   width: 100%;
   z-index: 10;
@@ -111,7 +129,17 @@ main .seta-subir.esconder {
   gap: 60px;
   justify-content: space-between;
   padding: 90px;
-  height: 90vh; }
+  height: 70vh; }
+  .secao-curriculo .caixa-curriculo {
+    width: 300px; }
+    .secao-curriculo .caixa-curriculo a {
+      border-radius: 5px;
+      border: 2px solid #fff;
+      color: #fff;
+      justify-self: start;
+      padding: 15px 40px;
+      text-decoration: none;
+      display: block; }
   .secao-curriculo .secao-curriculo_texto {
     display: grid;
     gap: 30px;
@@ -121,13 +149,17 @@ main .seta-subir.esconder {
       color: #fff;
       font-weight: 700;
       line-height: 1.4rem; }
-    .secao-curriculo .secao-curriculo_texto a {
-      border-radius: 5px;
-      border: 2px solid #fff;
-      color: #fff;
-      justify-self: start;
-      padding: 15px 40px;
-      text-decoration: none; }
+    .secao-curriculo .secao-curriculo_texto .secao-curriculo_texto__ajuste {
+      display: flex;
+      align-items: center;
+      gap: 3rem;
+      justify-content: space-between;
+      width: 80vw; }
+      .secao-curriculo .secao-curriculo_texto .secao-curriculo_texto__ajuste .secao-curriculo_texto__ajuste-caixa-texto {
+        width: 50%;
+        padding-bottom: 7rem; }
+      .secao-curriculo .secao-curriculo_texto .secao-curriculo_texto__ajuste .secao-curriculo_texto__ajuste-caixa-imagem {
+        width: 45%; }
   .secao-curriculo h2 {
     color: #f7f7f7;
     font-size: 30px;

@@ -14,6 +14,29 @@ body {
     position: relative;
 }
 
+#text {
+    height: 20px;
+    font-size: 4rem;
+    color: #fff;
+}
+
+#text::after {
+    content: "";
+    width: 3px;
+    height: 50px;
+    display: inline-block;
+    background-color: #fff;
+    animation: flasher 0.6s infinite linear;
+    opacity: 0;
+    margin-left: 10px;
+}
+
+@keyframes flasher {
+    from {
+        opacity: 1;
+    }
+}
+
 .resumo_generico h2 i,
 .my_skill h2 i {
     margin-right: 10px;
@@ -54,7 +77,7 @@ header {
     background-color: #03030ee7;
     // background: linear-gradient(#000, rgba(6, 6, 32, 0.89));
     // background-image: linear-gradient(#000, rgba(6, 6, 32, 0.89));
-    padding: 30px 0;
+    padding: 15px 0;
     position: fixed;
     width: 100%;
     z-index: 10;
@@ -138,7 +161,7 @@ main .seta-subir {
 
 main .seta-subir.esconder {
     display: none;
-} 
+}
 
 /* SEÇÃO DESCRIÇÃO INICIAL*/
 .secao-curriculo {
@@ -148,11 +171,28 @@ main .seta-subir.esconder {
     // background-color: $cor-de-fundo-secao;
     box-shadow: 0 0 40px 10px #ffffff1d;
     display: flex;
+    
     gap: 60px;
     // grid-template-columns: 1fr 300px 1fr;
     justify-content: space-between;
     padding: 90px;
-    height: 90vh;
+    height: 70vh;
+
+    .caixa-curriculo {
+
+
+        width: 300px;
+        a {
+        border-radius: 5px;
+        border: 2px solid $cor-secundaria;
+        color: $cor-secundaria;
+        justify-self: start;
+        padding: 15px 40px;
+        text-decoration: none;
+        display: block;
+    }
+    }
+    
 
     .secao-curriculo_texto {
         display: grid;
@@ -166,13 +206,20 @@ main .seta-subir.esconder {
             line-height: 1.4rem;
         }
 
-        a {
-            border-radius: 5px;
-            border: 2px solid $cor-secundaria;
-            color: $cor-secundaria;
-            justify-self: start;
-            padding: 15px 40px;
-            text-decoration: none;
+        .secao-curriculo_texto__ajuste {
+            display: flex;
+            align-items: center;
+            gap: 3rem;
+            justify-content: space-between;
+            width: 80vw;
+            .secao-curriculo_texto__ajuste-caixa-texto {
+                width: 50%;
+                padding-bottom: 7rem;
+            }
+
+            .secao-curriculo_texto__ajuste-caixa-imagem {
+                width: 45%;
+            }
         }
     }
 
@@ -831,7 +878,7 @@ footer {
 
     /* SEÇÃO DESCRIÇÃO INICIAL CURRICULO*/
     .seta-subir {
-        margin: 0 1.5rem 1.5rem 0!important;
+        margin: 0 1.5rem 1.5rem 0 !important;
     }
 
     .secao-curriculo {

@@ -1,20 +1,20 @@
 // Funcão para fazer letras do titulo uma por uma
-function escrevendLetra() {
-    function ativaLetra(elemento) {
-        const arrTexto = elemento.innerHTML.split('')
-        elemento.innerHTML = ''
-        arrTexto.forEach((letra, i) => {
-            setTimeout(() => {
-                elemento.innerHTML += letra
-            }, 75 * i)
-        });
-    }
+// function escrevendLetra() {
+//     function ativaLetra(elemento) {
+//         const arrTexto = elemento.innerHTML.split('')
+//         elemento.innerHTML = ''
+//         arrTexto.forEach((letra, i) => {
+//             setTimeout(() => {
+//                 elemento.innerHTML += letra
+//             }, 75 * i)
+//         });
+//     }
 
-    const titulo = document.querySelector('.digitando')
-    ativaLetra(titulo)
-}
+//     const titulo = document.querySelector('.digitando')
+//     ativaLetra(titulo)
+// }
 
-escrevendLetra()
+// escrevendLetra()
 
 function sobreMim() {
     const divExperiencia = document.querySelectorAll('.experience_content div')
@@ -300,6 +300,45 @@ fechar13.addEventListener('click', ()=> {
     verModalCorpo13.style.display = 'none'
 })
 
+// MODAL 14
+let verModalCorpo14 = document.querySelector("#modal-quatorze")
+let verModalBox14 = document.querySelector("#menu-modal-quatorze")
+let abrirModal14 = document.querySelector("#modal-projeto-quatorze")
+let fechar14 = document.querySelector("#fechar-quatorze")
+
+abrirModal14.addEventListener('click', ()=> {
+    verModalCorpo14.style.display = 'flex'
+})
+fechar14.addEventListener('click', ()=> {
+    verModalCorpo14.style.display = 'none'
+})
+
+// MODAL 15
+let verModalCorpo15 = document.querySelector("#modal-quinze")
+let verModalBox15 = document.querySelector("#menu-modal-quinze")
+let abrirModal15 = document.querySelector("#modal-projeto-quinze")
+let fechar15 = document.querySelector("#fechar-quinze")
+
+abrirModal15.addEventListener('click', ()=> {
+    verModalCorpo15.style.display = 'flex'
+})
+fechar15.addEventListener('click', ()=> {
+    verModalCorpo15.style.display = 'none'
+})
+
+// MODAL 16
+let verModalCorpo16 = document.querySelector("#modal-dezesses")
+let verModalBox16 = document.querySelector("#menu-modal-dezesses")
+let abrirModal16 = document.querySelector("#modal-projeto-dezesses")
+let fechar16 = document.querySelector("#fechar-dezesses")
+
+abrirModal16.addEventListener('click', ()=> {
+    verModalCorpo16.style.display = 'flex'
+})
+fechar16.addEventListener('click', ()=> {
+    verModalCorpo16.style.display = 'none'
+})
+
 // TROCAR COR DE FUNDO 
 // let mudarCorFundo = document.querySelector('.trocar')
 // let cabecalho = document.querySelector('.cabecalho')
@@ -320,3 +359,46 @@ fechar13.addEventListener('click', ()=> {
 //     portifolio.style.backgroundColor = 'white'
 //     rodape.style.backgroundColor = 'white'
 // })
+
+
+// inicio animação de escrever texto
+const arrayText = [
+    "Olá, Meu Nome é Felipe Deangelles",
+    "Sou Desenvolvedor de Software",
+    "Estou Graduando Engenharia de Software",
+    "Seja Bem-Vindo ao Meu Portifólio!"
+]
+
+const writeTime = 150
+const removeTime = 1000
+
+let indexSentence = 0
+let indexChar = 0
+
+const element = document.querySelector("#text")
+
+function writeText() {
+    if(indexChar <= arrayText[indexSentence].length) {
+        element.textContent = arrayText[indexSentence].substring(0, indexChar)
+        indexChar++
+        setTimeout(writeText, writeTime)
+    } else {
+        setTimeout(removeText, removeTime)
+    }
+}
+
+function removeText() {
+    if (indexChar >= 0) {
+        element.textContent = arrayText[indexSentence].substring(0, indexChar)
+        indexChar--
+        setTimeout(removeText, writeTime)
+    } else {
+        indexSentence++
+        if (indexSentence >= arrayText.length) {
+            indexSentence = 0
+        }
+        setTimeout(writeText, removeTime)
+    }
+}
+
+writeText()
